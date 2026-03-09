@@ -87,6 +87,10 @@
     -moz-box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   body.active {

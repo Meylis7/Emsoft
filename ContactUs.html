@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Emsoft</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header
+        class="block py-5 border-0 border-b-[0.4px] border-[#275F82] fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md"
+        id="main-header">
+        <div class="auto_container">
+            <div class="inner flex items-center justify-between">
+                <a href="index.html" class="block text-xl font-extrabold">
+                    Em<span class="text-[#419FD9]">soft</span>
+                </a>
+
+                <ul class="flex items-center gap-10">
+                    <li>
+                        <a href="#works" class="text-[16px] font-normal cursor-pointer">Latest from Work</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="text-[16px] font-normal cursor-pointer">Services</a>
+                    </li>
+                    <li>
+                        <a href="#technologies" class="text-[16px] font-normal cursor-pointer">Technologies</a>
+                    </li>
+                    <li>
+                        <a href="#about-us" class="text-[16px] font-normal cursor-pointer">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#reviews" class="text-[16px] font-normal cursor-pointer">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="text-[16px] font-normal cursor-pointer">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="flex items-center gap-4">
+                    <a href="mailto:sales@emsoftmn.com" class="text-[16px] font-medium! text-black cursor-pointer">
+                        sales@emsoftmn.com.com
+                    </a>
+
+                    <a href="#"
+                        class="text-[16px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-3 min-w-[210px] text-center rounded-[8px]">
+                        Get a Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Contact us ------>
+    <section class="pt-47 pb-30 overflow-hidden">
+        <div class="auto_container">
+            <div class="inner">
+                <div class="block max-w-238">
+                    <h2 class="row-span-2 text-[36px] font-bold mb-[18px] leading-tight">
+                        <span class="text-[#419FD9]">Contact</span>
+                        Us
+                    </h2>
+                    <p class="text-2xl text-[#061016] leading-tight">
+                        Let’s discuss your project and find the optimal solution. We are open to collaboration and ready
+                        to join your project at any stage — from concept to scaling
+                    </p>
+                </div>
+
+                <form action="#"
+                    class="grid grid-cols-2 gap-5 relative py-15 mt-10 border border-solid border-[#C6E2F4] rounded-[20px] p-25 bg-[linear-gradient(90.64deg,rgba(236,245,251,0.3)_0.35%,rgba(103,178,224,0.3)_109.61%)]">
+
+                    <div class="block max-w-110">
+                        <div class="block mb-10">
+                            <label for="phone" class="flex items-center text-sm text-[#061016] leading-tight">
+                                <span class="block mr-2 bg-[#419FD9] min-w-1.5 min-h-1.5 rounded-[1px]"></span>
+                                Phone
+                            </label>
+
+                            <input type="number" id="phone"
+                                class="block w-full border-solid border-0 border-b border-b-[#419FD9] pb-10 pt-4 placeholder:text-[#061016] font-semibold text-2xl"
+                                placeholder="+1 (952) 594-2575">
+                        </div>
+
+                        <div class="block mb-10">
+                            <label for="mail" class="flex items-center text-sm text-[#061016] leading-tight">
+                                <span class="block mr-2 bg-[#419FD9] min-w-1.5 min-h-1.5 rounded-[1px]"></span>
+                                E-mail
+                            </label>
+
+                            <input type="email" id="mail"
+                                class="block w-full border-solid border-0 border-b border-b-[#419FD9] pb-10 pt-4 placeholder:text-[#061016] font-semibold text-2xl"
+                                placeholder="sales@emsoftmn.com">
+                        </div>
+
+                        <div class="block">
+                            <label for="message" class="flex items-center text-sm text-[#061016] leading-tight">
+                                <span class="block mr-2 bg-[#419FD9] min-w-1.5 min-h-1.5 rounded-[1px]"></span>
+                                Mailing Address
+                            </label>
+
+                            <!-- <textarea id="message"
+                                class="block w-full border-solid border-0 border-b border-b-[#419FD9] pb-10 pt-4 placeholder:text-[#061016] font-semibold text-2xl text-wrap"
+                                placeholder="EMSoft LLC PO BOX 91 Savage, MN 55378-9901 USA">
+                            </textarea> -->
+
+                            <textarea name="message" id="message"
+                                class="block w-full border-solid border-0 border-b border-b-[#419FD9] pb-10 pt-4 placeholder:text-[#061016] font-semibold text-2xl text-wrap"
+                                placeholder="EMSoft LLC PO BOX 91 Savage, MN 55378-9901 USA"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center flex-col text-center">
+                        <h1 class="text-[30px] font-medium leading-tight">
+                            Ready to discuss your project?
+                        </h1>
+                        <p class="text-[18px] font-normal leading-tight mt-4 mb-9">
+                            Describe your goals — we will contact you within 1 business day and provide implementation
+                            options
+                        </p>
+                        <button type="submit"
+                            class="text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-5! px-8! min-w-[320px] text-center rounded-lg gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
+                            Send Us a Message
+                        </button>
+                    </div>
+
+                    <div class="block absolute -top-11.5 -right-12 opacity-40 z-0 pointer-events-none">
+                        <img src="assets/images/contact-lamp.png" alt="lamp-icon">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Contact us end -->
+
+    <!-- Footer -->
+    <Footer class="block py-5 bg-[#0D202B] mt-auto">
+        <div class="auto_container">
+            <div class="inner grid grid-cols-4 gap-5">
+                <div class="block">
+                    <a href="index.html" class="block text-[40px] font-extrabold uppercase text-white">
+                        Em<span class="text-[#419FD9]">soft</span>
+                    </a>
+
+                    <p class="text-sm font-normal mt-5 max-w-52.5 text-white">
+                        Transforming Ideas into Digital Realities with Expert Web Development
+                    </p>
+                </div>
+
+                <ul class="flex flex-col gap-4">
+                    <h6 class="text-sm text-[#419FD9] font-bold">
+                        Page Link
+                    </h6>
+
+                    <li>
+                        <a href="#works" class="text-[16px] font-normal cursor-pointer text-white">Latest from Work</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="text-[16px] font-normal cursor-pointer text-white">Services</a>
+                    </li>
+                    <li>
+                        <a href="#technologies"
+                            class="text-[16px] font-normal cursor-pointer text-white">Technologies</a>
+                    </li>
+                    <li>
+                        <a href="#about-us" class="text-[16px] font-normal cursor-pointer text-white">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#reviews" class="text-[16px] font-normal cursor-pointer text-white">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="text-[16px] font-normal cursor-pointer text-white">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="flex flex-col gap-4">
+                    <h6 class="text-sm text-[#419FD9] font-bold">
+                        Contact
+                    </h6>
+
+                    <a href="mailto:sales@emsoftmn.com" class="text-[16px] font-medium! text-white cursor-pointer">
+                        sales@emsoftmn.com.com
+                    </a>
+
+                    <a href="tel:952-594-2575" class="text-[16px] font-medium! text-white cursor-pointer">
+                        952-594-2575
+                    </a>
+
+                    <a href="#"
+                        class="text-[16px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-3 min-w-[210px] text-center rounded-lg">
+                        Get a Consultation
+                    </a>
+                </div>
+
+                <div
+                    class="flex items-center col-span-4 justify-between border-solid border-0 border-t-[0.4px] border-t-[#FAFAFA] pt-5 mt-16.5">
+                    <h6 class="text-sm text-[#A7A7A7] leading-tight">
+                        Copyright © 2020-2026 EMSOFT
+                    </h6>
+
+                    <ul class="flex items-center gap-5.5">
+                        <li>
+                            <a href="#" class="text-sm text-[#A7A7A7] leading-tight">
+                                Consent to the Processing of Personal Data
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#A7A7A7] leading-tight">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-[#A7A7A7] leading-tight">
+                                Cookie Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </Footer>
+    <!-- End Footer -->
+</body>
+
+</html>
