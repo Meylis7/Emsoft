@@ -18,7 +18,7 @@
 
     <!-- Header -->
     <header
-        class="block py-5 border-0 border-b-[0.4px] border-[#275F82] fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md"
+        class="block py-5 border-0 lg:border-b-[0.4px] border-[#275F82] fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md"
         id="main-header">
         <div class="auto_container">
             <div class="inner flex items-center justify-between">
@@ -26,28 +26,30 @@
                     Em<span class="text-[#419FD9]">soft</span>
                 </a>
 
-                <ul class="flex items-center gap-10">
-                    <li>
-                        <a href="#works" class="text-[16px] font-normal cursor-pointer">Latest from Work</a>
-                    </li>
-                    <li>
-                        <a href="#services" class="text-[16px] font-normal cursor-pointer">Services</a>
-                    </li>
-                    <li>
-                        <a href="#technologies" class="text-[16px] font-normal cursor-pointer">Technologies</a>
-                    </li>
-                    <li>
-                        <a href="#about-us" class="text-[16px] font-normal cursor-pointer">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#reviews" class="text-[16px] font-normal cursor-pointer">Reviews</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="text-[16px] font-normal cursor-pointer">Contact</a>
-                    </li>
-                </ul>
+                <div class="hidden xl:block ">
+                    <ul class="flex items-center gap-10">
+                        <li>
+                            <a href="#works" class="text-[16px] font-normal cursor-pointer">Latest from Work</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="text-[16px] font-normal cursor-pointer">Services</a>
+                        </li>
+                        <li>
+                            <a href="#technologies" class="text-[16px] font-normal cursor-pointer">Technologies</a>
+                        </li>
+                        <li>
+                            <a href="#about-us" class="text-[16px] font-normal cursor-pointer">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#reviews" class="text-[16px] font-normal cursor-pointer">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-[16px] font-normal cursor-pointer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
 
-                <div class="flex items-center gap-4">
+                <div class="xl:flex items-center gap-4 hidden">
                     <a href="mailto:sales@emsoftmn.com" class="text-[16px] font-medium! text-black cursor-pointer">
                         sales@emsoftmn.com.com
                     </a>
@@ -57,31 +59,43 @@
                         Get a Consultation
                     </a>
                 </div>
+
+                <button type="button" class="cursor-pointer block w-10 h-10 xl:hidden">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="4" fill="white" />
+                        <path d="M11 13H33" stroke="#419FD9" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M17 20L33 20" stroke="#419FD9" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M11 27H33" stroke="#419FD9" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
     <!-- End Header -->
 
     <!-- Hero ----- -->
-    <section class="pt-[100px] pb-[80px]">
+    <section class="pt-25 lg:pt-47 pb-20 overflow-hidden">
         <div class="auto_container">
             <div class="inner relative">
-                <h1 class="text-[52px] font-black mb-6 max-w-[900px] leading-15">
+                <h1 class="text-[32px] lg:text-[52px] font-black mb-6 max-w-225 leading-tight lg:leading-15">
                     <span class="text-[#419FD9]">EMSOFT</span> — a Minnesota-based development team building custom web
                     systems for companies
                     with <span class="text-[#828282]">$1–50M in annual revenue</span>
                 </h1>
 
-                <p class="text-[26px] font-normal mb-10! max-w-[793px] leading-tight">
+                <p class="text-[18px] lg:text-[26px] font-normal mb-10! max-w-[793px] leading-tight">
                     We develop <span class="font-bold">CRM systems, SaaS platforms, eCommerce solutions,
                     </span> and <span class="font-bold">AI-powered systems</span>
                     that automate
                     processes, increase profitability, and operate reliably 24/7
                 </p>
 
-                <div class="flex items-center gap-4 mb-[100px]">
+                <div class="flex md:items-center flex-col md:flex-row gap-4 mb-10 lg:mb-25">
                     <a href="#"
-                        class="text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-5! px-8! text-center rounded-lg flex items-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
+                        class="text-[16px] md:text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-5! px-8! text-center rounded-lg flex items-center justify-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
                         Calculate Your Development Budget
 
                         <span class="block w-6">
@@ -95,7 +109,7 @@
                     </a>
 
                     <a href="#"
-                        class="text-[18px] font-semibold leading-tight py-5 px-8 border border-solid border-[#419FD9] rounded-lg">
+                        class="text-[16px] md:text-[18px] font-semibold leading-tight py-5 px-8 border border-solid border-[#419FD9] rounded-lg text-center">
                         Request a Proposal
                     </a>
                 </div>
@@ -110,7 +124,7 @@
                             </svg>
                         </span>
 
-                        <p class="text-[18px] font-normal leading-none">
+                        <p class="text-[16px] md:text-[18px] font-normal leading-none">
                             We assemble a dedicated team within <span class="font-bold">10 business days</span> and
                             operate under a
                             transparent
@@ -127,7 +141,7 @@
                             </svg>
                         </span>
 
-                        <p class="text-[18px] font-normal leading-none">
+                        <p class="text-[16px] md:text-[18px] font-normal leading-none">
                             We deliver projects within <span class="font-bold">1–6 months</span> with fixed milestones
                             and clear
                             checkpoints
@@ -143,7 +157,7 @@
                             </svg>
                         </span>
 
-                        <p class="text-[18px] font-normal leading-none">
+                        <p class="text-[16px] md:text-[18px] font-normal leading-none">
                             We provide a detailed <span class="font-bold">roadmap and budget forecast</span> before
                             signing the contract
                             so you clearly
@@ -152,7 +166,8 @@
                     </div>
                 </div>
 
-                <div class="block absolute top-[50%] right-0 translate-y-[-50%]">
+                <div
+                    class="block w-150 lg:w-175 absolute top-[50%] -right-20 md:right-0 translate-y-[-50%] -z-1 opacity-50 xl:opacity-100">
                     <img src="assets/images/lamp.png" alt="lamp-icon">
                 </div>
             </div>
@@ -161,45 +176,45 @@
     <!-- Hero end-- -->
 
     <!-- Assistant --- -->
-    <section class="pt-[80px] pb-[60px]">
+    <section class="md:pt-20 pb-15">
         <div class="auto_container">
             <div class="inner">
-                <h1 class="text-[36px] font-bold mb-10 leading-tight max-w-[967px]">
+                <h1 class="text-[26px] lg:text-[36px] font-bold mb-6 md:mb-10 leading-tight max-w-[967px]">
                     <span class="text-[#419FD9]">Our online assistant will help</span> you understand pricing,
                     timelines, and our development approach
                 </h1>
 
                 <div
-                    class="flex justify-center relative py-15 border border-solid border-[#C6E2F4] rounded-[20px] p-5 bg-[linear-gradient(90.64deg,_rgba(236,245,251,0.3)_0.35%,_rgba(103,178,224,0.3)_109.61%)]">
-                    <div class="block absolute top-6.5 left-[32px] w-[312px]">
+                    class="flex flex-col md:flex-row items-center justify-center relative py-15 border border-solid border-[#C6E2F4] rounded-[20px] p-5 bg-[linear-gradient(90.64deg,_rgba(236,245,251,0.3)_0.35%,_rgba(103,178,224,0.3)_109.61%)]">
+                    <div class="block md:absolute md:top-6.5 md:left-[32px]  sm:w-[312px]">
                         <img class="w-full object-contain" src="assets/images/robot-head.png" alt="robot-head">
                     </div>
 
                     <div class="block relative z-1 text-center">
-                        <h4 class="text-2xl font-bold mb-[26px] leading-none">
+                        <h4 class="text-xl md:text-2xl font-bold mb-[26px] leading-none">
                             EMSOFT AI Assistant
                         </h4>
-                        <h6 class="text-2xl font-semibold mb-[18px]">
+                        <h6 class="text-xl md:text-2xl font-semibold mb-[18px]">
                             <span class="block text-[#419FD9]">Hello!</span>
                             Briefly tell us what you would like to build
                         </h6>
                         <div class="flex justify-center flex-wrap gap-2 max-w-[627px]">
-                            <p class="bg-white text-[18px] py-[6px] px-[10px] rounded-[4px]">
+                            <p class="bg-white text-[16px] md:text-[18px] py-[6px] px-[10px] rounded-[4px]">
                                 CRM System
                             </p>
-                            <p class="bg-white text-[18px] py-[6px] px-[10px] rounded-[4px]">
+                            <p class="bg-white text-[16px] md:text-[18px] py-[6px] px-[10px] rounded-[4px]">
                                 Online Store
                             </p>
-                            <p class="bg-white text-[18px] py-[6px] px-[10px] rounded-[4px]">
+                            <p class="bg-white text-[16px] md:text-[18px] py-[6px] px-[10px] rounded-[4px]">
                                 SaaS Platform
                             </p>
-                            <p class="bg-white text-[18px] py-[6px] px-[10px] rounded-[4px]">
+                            <p class="bg-white text-[16px] md:text-[18px] py-[6px] px-[10px] rounded-[4px]">
                                 Mobile App
                             </p>
-                            <p class="bg-white text-[18px] py-[6px] px-[10px] rounded-[4px]">
+                            <p class="bg-white text-[16px] md:text-[18px] py-[6px] px-[10px] rounded-[4px]">
                                 AI Solution
                             </p>
-                            <p class="bg-white text-[18px] py-[6px] px-[10px] rounded-[4px]">
+                            <p class="bg-white text-[16px] md:text-[18px] py-[6px] px-[10px] rounded-[4px]">
                                 Website Development
                             </p>
                         </div>
@@ -211,62 +226,63 @@
     <!-- Assistant end -->
 
     <!-- Clients ------>
-    <section class="py-15">
+    <section class="py-7.5 md:py-15">
         <div class="auto_container">
             <div class="inner">
-                <div class="grid grid-cols-3 gap-x-5 gap-y-[60px]">
-                    <h2 class="row-span-2 text-[36px] font-bold mb-10 leading-tight">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5.5 lg:gap-y-15">
+                    <h2
+                        class="md:col-span-2 lg:col-span-1 lg:row-span-2 text-[26px] lg:text-[36px] font-bold mb-6 md:mb-10 leading-tight">
                         Why Clients
-                        <span class="text-[#419FD9] block">Choose Us</span>
+                        <span class="text-[#419FD9] md:block">Choose Us</span>
                     </h2>
 
-                    <div class="block max-w-[324px]">
+                    <div class="block md:max-w-81">
                         <h1
-                            class="flex items-center gap-3 text-2xl font-semibold pb-2 boreder-solid border-0 border-b-[0.4px] border-[#275F82]">
-                            <span class="block min-w-3 min-h-3 rounded-[2px] bg-[#419FD9]"></span>
+                            class="flex items-center gap-3 text-xl md:text-2xl font-semibold pb-2 boreder-solid border-0 border-b-[0.4px] border-[#275F82]">
+                            <span class="block min-w-3 min-h-3 rounded-xs bg-[#419FD9]"></span>
                             15+ Years of Commercial Development Experience
                         </h1>
-                        <p class="text-[18px] text-[#061016] pt-[14px]">
+                        <p class="text-[16px] md:text-[18px] text-[#061016] pt-3.5">
                             Extensive experience building complex web systems for mid-sized businesses in the U.S.
                         </p>
                     </div>
 
-                    <div class="block max-w-[324px]">
+                    <div class="block md:max-w-81">
                         <h1
-                            class="flex items-center gap-3 text-2xl font-semibold pb-2 boreder-solid border-0 border-b-[0.4px] border-[#275F82]">
-                            <span class="block min-w-3 min-h-3 rounded-[2px] bg-[#419FD9]"></span>
+                            class="flex items-center gap-3 text-xl md:text-2xl font-semibold pb-2 boreder-solid border-0 border-b-[0.4px] border-[#275F82]">
+                            <span class="block min-w-3 min-h-3 rounded-xs bg-[#419FD9]"></span>
                             15+ Years of Commercial Development Experience
                         </h1>
-                        <p class="text-[18px] text-[#061016] pt-[14px]">
+                        <p class="text-[16px] md:text-[18px] text-[#061016] pt-3.5">
                             Extensive experience building complex web systems for mid-sized businesses in the U.S.
                         </p>
                     </div>
 
-                    <div class="block max-w-[324px]">
+                    <div class="block md:max-w-81">
                         <h1
-                            class="flex items-center gap-3 text-2xl font-semibold pb-2 boreder-solid border-0 border-b-[0.4px] border-[#275F82]">
-                            <span class="block min-w-3 min-h-3 rounded-[2px] bg-[#419FD9]"></span>
+                            class="flex items-center gap-3 text-xl md:text-2xl font-semibold pb-2 boreder-solid border-0 border-b-[0.4px] border-[#275F82]">
+                            <span class="block min-w-3 min-h-3 rounded-xs bg-[#419FD9]"></span>
                             15+ Years of Commercial Development Experience
                         </h1>
-                        <p class="text-[18px] text-[#061016] pt-[14px]">
+                        <p class="text-[16px] md:text-[18px] text-[#061016] pt-3.5">
                             Extensive experience building complex web systems for mid-sized businesses in the U.S.
                         </p>
                     </div>
 
-                    <div class="block max-w-[324px]">
+                    <div class="block md:max-w-81">
                         <h1
-                            class="flex items-center gap-3 text-2xl font-semibold pb-2 boreder-solid border-0 border-b-[0.4px] border-[#275F82]">
-                            <span class="block min-w-3 min-h-3 rounded-[2px] bg-[#419FD9]"></span>
+                            class="flex items-center gap-3 text-xl md:text-2xl font-semibold pb-2 boreder-solid border-0 border-b-[0.4px] border-[#275F82]">
+                            <span class="block min-w-3 min-h-3 rounded-xs bg-[#419FD9]"></span>
                             15+ Years of Commercial Development Experience
                         </h1>
-                        <p class="text-[18px] text-[#061016] pt-[14px]">
+                        <p class="text-[16px] md:text-[18px] text-[#061016] pt-3.5">
                             Extensive experience building complex web systems for mid-sized businesses in the U.S.
                         </p>
                     </div>
                 </div>
 
                 <div
-                    class="flex justify-center relative border border-solid border-[#C6E2F4] rounded-[20px] py-10 px-4 text-center mt-[70px] bg-[linear-gradient(90.64deg,_rgba(236,245,251,0.3)_0.35%,_rgba(103,178,224,0.3)_109.61%)]">
+                    class="hidden lg:flex justify-center relative border border-solid border-[#C6E2F4] rounded-[20px] py-10 px-4 text-center mt-[70px] bg-[linear-gradient(90.64deg,_rgba(236,245,251,0.3)_0.35%,_rgba(103,178,224,0.3)_109.61%)]">
                     <h1 class="text-[30px] font-bold leading-tight max-w-[1000px] uppercase">
                         <span class="text-[#419FD9]">Senior-level development team</span>
                         operating under strict quality standards and internal code review
@@ -279,17 +295,17 @@
     <!-- Clients end -->
 
     <!-- Latest work --- -->
-    <section class="relative py-15 overflow-hidden">
+    <section class="relative py-7.5 md:py-15 overflow-hidden">
         <div class="auto_container relative">
             <div class="inner relative">
-                <div class="flex items-center justify-between mb-10 gap-6">
-                    <h2 class="text-[36px] font-bold mb-10 leading-tight">
+                <div class="flex items-center justify-between mb-6 md:mb-10 gap-6">
+                    <h2 class="text-[26px] lg:text-[36px] font-bold leading-tight">
                         Latest from <span class="text-[#419FD9]">Work</span>
                     </h2>
 
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-3 h-10 md:h-15">
                         <button
-                            class="swiper-button-prev trusted-prev group relative! top-0! left-0! right-0! bottom-0! w-15! h-15! flex items-center justify-center rounded-full border border-[#C6E2F4] bg-white shadow-[0_0_8px_rgba(0,0,0,0.08)] hover:bg-[#419FD9] hover:text-white after:hidden transition-colors duration-200">
+                            class="swiper-button-prev trusted-prev block group relative! left-0! right-0! top-[10px]! w-10! md:w-15! h-10! md:h-15! flex items-center justify-center rounded-full border border-[#C6E2F4] bg-white shadow-[0_0_8px_rgba(0,0,0,0.08)] hover:bg-[#419FD9] hover:text-white after:hidden transition-colors duration-200">
                             <svg class="w-2.5! h-5! object-contain" width="12" height="22" viewBox="0 0 12 22"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11 1L1 11L11 21"
@@ -298,7 +314,7 @@
                             </svg>
                         </button>
                         <button
-                            class="swiper-button-next trusted-next group relative! top-0! left-0! right-0! bottom-0! w-15! h-15! flex items-center justify-center rounded-full border border-[#C6E2F4] bg-white shadow-[0_0_8px_rgba(0,0,0,0.12)] hover:bg-[#419FD9] hover:text-white after:hidden transition-colors duration-200">
+                            class="swiper-button-next trusted-next block group relative! left-0! right-0! top-[10px]! w-10! md:w-15! h-10! md:h-15! flex items-center justify-center rounded-full border border-[#C6E2F4] bg-white shadow-[0_0_8px_rgba(0,0,0,0.12)] hover:bg-[#419FD9] hover:text-white after:hidden transition-colors duration-200">
                             <svg class="w-2.5! h-5! object-contain" width="12" height="22" viewBox="0 0 12 22"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 1L11 11L1 21"
@@ -312,7 +328,7 @@
                 <div class="slider slider-trusted relative -mr-15 pr-15">
                     <div class="swiper works-swiper overflow-visible!">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide h-auto! !min-h-[470px]">
+                            <div class="swiper-slide">
                                 <div class="block">
                                     <h6 class="text-[#061016]/50 text-sm font-semibold mb-5">
                                         About the Project
@@ -322,17 +338,18 @@
                                         <img src="assets/images/work-project.png" alt="project-photo">
                                     </div>
 
-                                    <h4 class="mt-5 mb-3 text-[#061016] text-3xl font-semibold leading-tight">
+                                    <h4
+                                        class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight">
                                         Inventory Web Application
                                     </h4>
-                                    <p class="text-[#061016] text-lg mb-4.5 leading-tight">
+                                    <p class="text-[#061016] text-[16px] md:text-lg mb-4.5 leading-tight">
                                         A warehouse and inventory management system for an auto service network. Enables
                                         real-time
                                         tracking of stock levels, orders, and product movement
                                     </p>
 
                                     <a href="#"
-                                        class="text-[18px] font-semibold cursor-pointer text-[#419FD9] flex items-center gap-2 leading-tight">
+                                        class="text-sm md:text-[18px] font-semibold cursor-pointer text-[#419FD9] flex items-center gap-2 leading-tight">
                                         View Project
 
                                         <span class="block w-6">
@@ -346,7 +363,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide h-auto! !min-h-[470px]">
+                            <div class="swiper-slide">
                                 <div class="block">
                                     <h6 class="text-[#061016]/50 text-sm font-semibold mb-5">
                                         About the Project
@@ -356,17 +373,18 @@
                                         <img src="assets/images/work-project-2.png" alt="project-photo">
                                     </div>
 
-                                    <h4 class="mt-5 mb-3 text-[#061016] text-3xl font-semibold leading-tight">
+                                    <h4
+                                        class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight">
                                         Stargate Platform
                                     </h4>
-                                    <p class="text-[#061016] text-lg mb-4.5 leading-tight">
+                                    <p class="text-[#061016] text-[16px] md:text-lg mb-4.5 leading-tight">
                                         A platform for managing mobile applications and digital services. Provides
                                         centralized
                                         control over users and operational processes
                                     </p>
 
                                     <a href="#"
-                                        class="text-[18px] font-semibold cursor-pointer text-[#419FD9] flex items-center gap-2 leading-tight">
+                                        class="text-sm md:text-[18px] font-semibold cursor-pointer text-[#419FD9] flex items-center gap-2 leading-tight">
                                         View Project
 
                                         <span class="block w-6">
@@ -380,7 +398,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide h-auto! !min-h-[470px]">
+                            <div class="swiper-slide">
                                 <div class="block">
                                     <h6 class="text-[#061016]/50 text-sm font-semibold mb-5">
                                         About the Project
@@ -390,17 +408,18 @@
                                         <img src="assets/images/work-project.png" alt="project-photo">
                                     </div>
 
-                                    <h4 class="mt-5 mb-3 text-[#061016] text-3xl font-semibold leading-tight">
+                                    <h4
+                                        class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight">
                                         Inventory Web Application
                                     </h4>
-                                    <p class="text-[#061016] text-lg mb-4.5 leading-tight">
+                                    <p class="text-[#061016] text-[16px] md:text-lg mb-4.5 leading-tight">
                                         A warehouse and inventory management system for an auto service network. Enables
                                         real-time
                                         tracking of stock levels, orders, and product movement
                                     </p>
 
                                     <a href="#"
-                                        class="text-[18px] font-semibold cursor-pointer text-[#419FD9] flex items-center gap-2 leading-tight">
+                                        class="text-sm md:text-[18px] font-semibold cursor-pointer text-[#419FD9] flex items-center gap-2 leading-tight">
                                         View Project
 
                                         <span class="block w-6">
@@ -414,7 +433,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide h-auto! !min-h-[470px]">
+                            <div class="swiper-slide">
                                 <div class="block">
                                     <h6 class="text-[#061016]/50 text-sm font-semibold mb-5">
                                         About the Project
@@ -424,17 +443,18 @@
                                         <img src="assets/images/work-project-2.png" alt="project-photo">
                                     </div>
 
-                                    <h4 class="mt-5 mb-3 text-[#061016] text-3xl font-semibold leading-tight">
+                                    <h4
+                                        class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight">
                                         Stargate Platform
                                     </h4>
-                                    <p class="text-[#061016] text-lg mb-4.5 leading-tight">
+                                    <p class="text-[#061016] text-[16px] md:text-lg mb-4.5 leading-tight">
                                         A platform for managing mobile applications and digital services. Provides
                                         centralized
                                         control over users and operational processes
                                     </p>
 
                                     <a href="#"
-                                        class="text-[18px] font-semibold cursor-pointer text-[#419FD9] flex items-center gap-2 leading-tight">
+                                        class="text-sm md:text-[18px] font-semibold cursor-pointer text-[#419FD9] flex items-center gap-2 leading-tight">
                                         View Project
 
                                         <span class="block w-6">
@@ -448,7 +468,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide h-auto! !min-h-[470px]">
+                            <div class="swiper-slide">
                                 <div class="block">
                                     <h6 class="text-[#061016]/50 text-sm font-semibold mb-5">
                                         About the Project
@@ -458,17 +478,18 @@
                                         <img src="assets/images/work-project.png" alt="project-photo">
                                     </div>
 
-                                    <h4 class="mt-5 mb-3 text-[#061016] text-3xl font-semibold leading-tight">
+                                    <h4
+                                        class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight">
                                         Inventory Web Application
                                     </h4>
-                                    <p class="text-[#061016] text-lg mb-4.5 leading-tight">
+                                    <p class="text-[#061016] text-[16px] md:text-lg mb-4.5 leading-tight">
                                         A warehouse and inventory management system for an auto service network. Enables
                                         real-time
                                         tracking of stock levels, orders, and product movement
                                     </p>
 
                                     <a href="#"
-                                        class="text-[18px] font-semibold cursor-pointer text-[#419FD9] flex items-center gap-2 leading-tight">
+                                        class="text-sm md:text-[18px] font-semibold cursor-pointer text-[#419FD9] flex items-center gap-2 leading-tight">
                                         View Project
 
                                         <span class="block w-6">
@@ -482,7 +503,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="swiper-slide h-auto! !min-h-[470px]">
+                            <div class="swiper-slide">
                                 <div class="block">
                                     <h6 class="text-[#061016]/50 text-sm font-semibold mb-5">
                                         About the Project
@@ -492,17 +513,18 @@
                                         <img src="assets/images/work-project-2.png" alt="project-photo">
                                     </div>
 
-                                    <h4 class="mt-5 mb-3 text-[#061016] text-3xl font-semibold leading-tight">
+                                    <h4
+                                        class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight">
                                         Stargate Platform
                                     </h4>
-                                    <p class="text-[#061016] text-lg mb-4.5 leading-tight">
+                                    <p class="text-[#061016] text-[16px] md:text-lg mb-4.5 leading-tight">
                                         A platform for managing mobile applications and digital services. Provides
                                         centralized
                                         control over users and operational processes
                                     </p>
 
                                     <a href="#"
-                                        class="text-[18px] font-semibold cursor-pointer text-[#419FD9] flex items-center gap-2 leading-tight">
+                                        class="text-sm md:text-[18px] font-semibold cursor-pointer text-[#419FD9] flex items-center gap-2 leading-tight">
                                         View Project
 
                                         <span class="block w-6">
@@ -525,29 +547,28 @@
     <!-- Latest work end -->
 
     <!-- Services --- -->
-    <section class="pt-22 py-15" id="services">
+    <section class="md:pt-22 py-7.5 md:py-15" id="services">
         <div class="auto_container">
             <div class="inner">
                 <div class="block">
-                    <div class="grid grid-cols-3 gap-y-4">
-                        <h2 class="text-[36px] font-bold mb-10 leading-tight">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 mb-10">
+                        <h2 class="text-[26px] lg:text-[36px] font-bold leading-tight">
                             Our
                             <span class="text-[#419FD9] ">Services</span>
                         </h2>
 
-                        <p class="col-span-2 text-2xl leading-tight mb-10">
+                        <p class="col-span-2 text-[16px] md:text-2xl leading-tight">
                             We cover the full development cycle: from UI/UX design and backend architecture to testing
                             and
                             ongoing support. We assign specialists based on your tech stack and business goals
                         </p>
                     </div>
 
-                    <div
-                        class="grid grid-cols-3 gap-y-4 border-solid border-0 border-b border-b-[#C6E2F4] mb-4.5 pb-4.5">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4.5 pb-4.5">
                         <div
-                            class="flex flex-col justify-between px-5 p-6.5 pb-6.5 min-h-80! border-b-[#C6E2F4] border-r border-r-[#C6E2F4]">
+                            class="flex md:flex-col justify-between gap-x-6 px-5 p-6.5 pb-6.5 md:min-h-80! border-b md:border-b-0 md:border-r border-[#C6E2F4]">
                             <span
-                                class="flex items-center justify-center border border-solid border-[#C6E2F4] bg-[#ECF5FB] w-[48px] h-[48px] min-w-[48px] min-h-[48px] rounded-[6px] shadow-[0_0_6px_rgba(65,159,217,0.2)] !mb-[55px]">
+                                class="flex items-center justify-center border border-solid border-[#C6E2F4] bg-[#ECF5FB] w-[48px] h-[48px] min-w-[48px] min-h-[48px] rounded-[6px] shadow-[0_0_6px_rgba(65,159,217,0.2)] md:mb-[55px]!">
                                 <svg class="w-full object-contain" width="22" height="22" viewBox="0 0 22 22"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_32_75)">
@@ -571,18 +592,18 @@
                             </span>
 
                             <div class="block">
-                                <h4 class="text[24px] font-semibold mb-[18px] leading-tight">
+                                <h4 class="text-xl md:text[24px] font-semibold mb-[18px] leading-tight">
                                     Websites & Platforms → WordPress
                                 </h4>
-                                <p class="text-[18px] text-[#061016] leading-tight">
+                                <p class="text-[16px] md:text-[18px] text-[#061016] leading-tight">
                                     Modern websites and client portals fully optimized for mobile devices
                                 </p>
                             </div>
                         </div>
                         <div
-                            class="flex flex-col justify-between px-5 p-6.5 pb-6.5 min-h-80! border-b-[#C6E2F4] border-r border-r-[#C6E2F4]">
+                            class="flex md:flex-col justify-between gap-x-6 px-5 p-6.5 pb-6.5 md:min-h-80! border-b md:border-b-0 border-0 lg:border-r border-[#C6E2F4]">
                             <span
-                                class="flex items-center justify-center border border-solid border-[#C6E2F4] bg-[#ECF5FB] w-[48px] h-[48px] min-w-[48px] min-h-[48px] rounded-[6px] shadow-[0_0_6px_rgba(65,159,217,0.2)] !mb-[55px]">
+                                class="flex items-center justify-center border border-solid border-[#C6E2F4] bg-[#ECF5FB] w-[48px] h-[48px] min-w-[48px] min-h-[48px] rounded-[6px] shadow-[0_0_6px_rgba(65,159,217,0.2)] md:mb-[55px]!">
                                 <svg class="w-full object-contain" width="32" height="32" viewBox="0 0 32 32"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_34_49)">
@@ -612,10 +633,10 @@
                             </span>
 
                             <div class="block">
-                                <h4 class="text[24px] font-semibold mb-[18px] leading-tight">
+                                <h4 class="text-xl md:text[24px] font-semibold mb-[18px] leading-tight">
                                     WooCommerce & Online Stores
                                 </h4>
-                                <p class="text-[18px] text-[#061016] leading-tight">
+                                <p class="text-[16px] md:text-[18px] text-[#061016] leading-tight">
                                     We build WooCommerce stores with product catalogs, shopping carts, online payments,
                                     and
                                     integrations with CRM and shipping providers. We automate order processing and sales
@@ -623,9 +644,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between px-5 p-6.5 pb-6.5 min-h-80! border-b-[#C6E2F4]">
+                        <div
+                            class="flex md:flex-col justify-between gap-x-6 px-5 p-6.5 pb-6.5 md:min-h-80! border-b md:border-b-0 md:border-r border-[#C6E2F4]">
                             <span
-                                class="flex items-center justify-center border border-solid border-[#C6E2F4] bg-[#ECF5FB] w-[48px] h-[48px] min-w-[48px] min-h-[48px] rounded-[6px] shadow-[0_0_6px_rgba(65,159,217,0.2)] !mb-[55px]">
+                                class="flex items-center justify-center border border-solid border-[#C6E2F4] bg-[#ECF5FB] w-[48px] h-[48px] min-w-[48px] min-h-[48px] rounded-[6px] shadow-[0_0_6px_rgba(65,159,217,0.2)] md:mb-[55px]!">
                                 <svg class="w-full object-contain" width="32" height="32" viewBox="0 0 32 32"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_34_23)">
@@ -646,22 +668,22 @@
                             </span>
 
                             <div class="block">
-                                <h4 class="text[24px] font-semibold mb-[18px] leading-tight">
+                                <h4 class="text-xl md:text[24px] font-semibold mb-[18px] leading-tight">
                                     Mobile Applications
                                 </h4>
-                                <p class="text-[18px] text-[#061016] leading-tight">
+                                <p class="text-[16px] md:text-[18px] text-[#061016] leading-tight">
                                     iOS and Android applications for sales, customer service, and internal team
                                     operations
                                 </p>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="grid grid-cols-3 gap-y-4">
+                        <span class="hidden lg:block lg:col-span-3 bg-[#C6E2F4] h-px w-full"></span>
+
                         <div
-                            class="flex flex-col justify-between px-5 p-6.5 min-h-80! border-solid border-0 border-r border-r-[#C6E2F4]">
+                            class="flex md:flex-col justify-between gap-x-6 px-5 p-6.5 md:min-h-80! border-b md:border-b-0 border-solid border-0 lg:border-r border-[#C6E2F4]">
                             <span
-                                class="flex items-center justify-center border border-solid border-[#C6E2F4] bg-[#ECF5FB] w-[48px] h-[48px] min-w-[48px] min-h-[48px] rounded-[6px] shadow-[0_0_6px_rgba(65,159,217,0.2)] !mb-[55px]">
+                                class="flex items-center justify-center border border-solid border-[#C6E2F4] bg-[#ECF5FB] w-[48px] h-[48px] min-w-[48px] min-h-[48px] rounded-[6px] shadow-[0_0_6px_rgba(65,159,217,0.2)] md:mb-[55px]!">
                                 <svg class="w-full object-contain" width="32" height="32" viewBox="0 0 32 32"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -672,19 +694,19 @@
                             </span>
 
                             <div class="block">
-                                <h4 class="text[24px] font-semibold mb-[18px] leading-tight">
+                                <h4 class="text-xl md:text[24px] font-semibold mb-[18px] leading-tight">
                                     SaaS Platforms
                                 </h4>
-                                <p class="text-[18px] text-[#061016] leading-tight">
+                                <p class="text-[16px] md:text-[18px] text-[#061016] leading-tight">
                                     Subscription-based online platforms for
                                     managing customers, orders, and business operations
                                 </p>
                             </div>
                         </div>
                         <div
-                            class="flex flex-col justify-between px-5 p-6.5 min-h-80! border-solid border-0 border-r border-r-[#C6E2F4]">
+                            class="flex md:flex-col justify-between gap-x-6 px-5 p-6.5 md:min-h-80! border-b md:border-b-0 border-solid border-0 md:border-r border-[#C6E2F4]">
                             <span
-                                class="flex items-center justify-center border border-solid border-[#C6E2F4] bg-[#ECF5FB] w-[48px] h-[48px] min-w-[48px] min-h-[48px] rounded-[6px] shadow-[0_0_6px_rgba(65,159,217,0.2)] !mb-[55px]">
+                                class="flex items-center justify-center border border-solid border-[#C6E2F4] bg-[#ECF5FB] w-[48px] h-[48px] min-w-[48px] min-h-[48px] rounded-[6px] shadow-[0_0_6px_rgba(65,159,217,0.2)] md:mb-[55px]!">
                                 <svg class="w-full object-contain" width="25" height="28" viewBox="0 0 25 28"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -695,18 +717,19 @@
                             </span>
 
                             <div class="block">
-                                <h4 class="text[24px] font-semibold mb-[18px] leading-tight">
+                                <h4 class="text-xl md:text[24px] font-semibold mb-[18px] leading-tight">
                                     AI Solutions for Business
                                 </h4>
-                                <p class="text-[18px] text-[#061016] leading-tight">
+                                <p class="text-[16px] md:text-[18px] text-[#061016] leading-tight">
                                     Chatbots, analytics, demand forecasting, intelligent recommendations, and support
                                     automation
                                 </p>
                             </div>
                         </div>
-                        <div class="flex flex-col justify-between px-5 p-6.5 min-h-80!">
+                        <div
+                            class="flex md:flex-col justify-between gap-x-6 px-5 p-6.5 md:min-h-80! border-b md:border-b-0 border-[#C6E2F4]">
                             <span
-                                class="flex items-center justify-center border border-solid border-[#C6E2F4] bg-[#ECF5FB] w-[48px] h-[48px] min-w-[48px] min-h-[48px] rounded-[6px] shadow-[0_0_6px_rgba(65,159,217,0.2)] !mb-[55px]">
+                                class="flex items-center justify-center border border-solid border-[#C6E2F4] bg-[#ECF5FB] w-[48px] h-[48px] min-w-[48px] min-h-[48px] rounded-[6px] shadow-[0_0_6px_rgba(65,159,217,0.2)] md:mb-[55px]!">
                                 <svg class="w-full object-contain" width="32" height="32" viewBox="0 0 32 32"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_34_62)">
@@ -730,10 +753,10 @@
                             </span>
 
                             <div class="block">
-                                <h4 class="text[24px] font-semibold mb-[18px] leading-tight">
+                                <h4 class="text-xl md:text[24px] font-semibold mb-[18px] leading-tight">
                                     System & Service Integrations
                                 </h4>
-                                <p class="text-[18px] text-[#061016] leading-tight">
+                                <p class="text-[16px] md:text-[18px] text-[#061016] leading-tight">
                                     We integrate websites and applications with CRM, ERP, payment gateways, and
                                     marketing
                                     tools
@@ -742,9 +765,9 @@
                         </div>
                     </div>
 
-                    <div class="col-span-3 flex items-center justify-center gap-4 mt-10">
+                    <div class="flex items-center justify-center flex-col md:flex-row gap-4 mt-10">
                         <a href="#"
-                            class="text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-5! px-8! text-center rounded-lg flex items-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
+                            class="w-full md:w-fit text-[16px] md:text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-5! px-8! text-center rounded-lg flex items-center justify-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
                             Choose Services for Your Project
 
                             <span class="block w-6">
@@ -758,7 +781,7 @@
                         </a>
 
                         <a href="#"
-                            class="text-[18px] font-semibold leading-tight py-5 px-8 border border-solid border-[#419FD9] rounded-lg">
+                            class="w-full md:w-fit text-[16px] md:text-[18px] font-semibold leading-tight text-center py-5 px-8 border border-solid border-[#419FD9] rounded-lg">
                             Request a Proposal
                         </a>
                     </div>
@@ -769,85 +792,85 @@
     <!-- Services end -->
 
     <!-- Guarantee --- -->
-    <section class="py-15">
+    <section class="py-7.5 md:py-15">
         <div class="auto_container">
             <div class="inner">
-                <h1 class="text-[36px] font-bold mb-10 leading-tight max-w-[800px] mb-[18px]">
+                <h1 class="text-[26px] lg:text-[36px] font-bold leading-tight max-w-[800px] mb-[18px]">
                     <span class="text-[#419FD9]"> We guarantee</span>
                     stability, reliability, and full control at every stage of development
                 </h1>
-                <p class="text-2xl text-[#061016]">
+                <p class="text-[16px] md:text-2xl text-[#061016]">
                     We build solutions that run 24/7 and scale alongside your business
                 </p>
 
                 <div
-                    class="grid grid-cols-2 gap-x-5 gap-y-10 relative border border-solid border-[#C6E2F4] rounded-[20px] p-[60px] mt-[70px] bg-[linear-gradient(90.64deg,_rgba(236,245,251,0.3)_0.35%,_rgba(103,178,224,0.3)_109.61%)]">
+                    class="grid md:grid-cols-2 gap-x-6 gap-y-10 relative border border-solid border-[#C6E2F4] rounded-[20px] p-5 md:pz-15 mt-10 md:mt-[70px] bg-[linear-gradient(90.64deg,_rgba(236,245,251,0.3)_0.35%,_rgba(103,178,224,0.3)_109.61%)]">
                     <div class="block">
                         <span
-                            class="w-10 h-10 flex items-center justify-center bg-[#0D202B] rounded mb-[18px] text-[#ECF5FB] text-[18px] font-bold">
+                            class="w-8 md:w-10 h-8 md:h-10 flex items-center justify-center bg-[#0D202B] rounded mb-[18px] text-[#ECF5FB] text-sm md:text-[18px] font-bold">
                             1
                         </span>
 
-                        <h4 class="text-2xl font-semibold mb-3">
+                        <h4 class="text-xl md:text-2xl font-semibold mb-3">
                             Your project doesn’t crash or slow down
                         </h4>
-                        <p class="text-[18px] text-[#061016]">
+                        <p class="text-[16px] md:text-[18px] leading-tight text-[#061016]">
                             We architect systems to remain stable even under increased load. As your customer base
                             grows, your website or platform handles the demand without performance issues
                         </p>
                     </div>
                     <div class="block">
                         <span
-                            class="w-10 h-10 flex items-center justify-center bg-[#0D202B] rounded mb-[18px] text-[#ECF5FB] text-[18px] font-bold">
+                            class="w-8 md:w-10 h-8 md:h-10 flex items-center justify-center bg-[#0D202B] rounded mb-[18px] text-[#ECF5FB] text-sm md:text-[18px] font-bold">
                             2
                         </span>
 
-                        <h4 class="text-2xl font-semibold mb-3">
+                        <h4 class="text-xl md:text-2xl font-semibold mb-3">
                             Your data is secure
                         </h4>
-                        <p class="text-[18px] text-[#061016]">
+                        <p class="text-[16px] md:text-[18px] leading-tight text-[#061016]">
                             We prioritize security: access levels are properly configured, data is protected, and the
                             risk of breaches is minimized. Your client and business data stay safe
                         </p>
                     </div>
                     <div class="block">
                         <span
-                            class="w-10 h-10 flex items-center justify-center bg-[#0D202B] rounded mb-[18px] text-[#ECF5FB] text-[18px] font-bold">
+                            class="w-8 md:w-10 h-8 md:h-10 flex items-center justify-center bg-[#0D202B] rounded mb-[18px] text-[#ECF5FB] text-sm md:text-[18px] font-bold">
                             3
                         </span>
 
-                        <h4 class="text-2xl font-semibold mb-3">
+                        <h4 class="text-xl md:text-2xl font-semibold mb-3">
                             The solution grows with your company
                         </h4>
-                        <p class="text-[18px] text-[#061016]">
+                        <p class="text-[16px] md:text-[18px] leading-tight text-[#061016]">
                             We design your system with future growth in mind — so you won’t need to rebuild everything a
                             year from now
                         </p>
                     </div>
                     <div class="block">
                         <span
-                            class="w-10 h-10 flex items-center justify-center bg-[#0D202B] rounded mb-[18px] text-[#ECF5FB] text-[18px] font-bold">
+                            class="w-8 md:w-10 h-8 md:h-10 flex items-center justify-center bg-[#0D202B] rounded mb-[18px] text-[#ECF5FB] text-sm md:text-[18px] font-bold">
                             4
                         </span>
 
-                        <h4 class="text-2xl font-semibold mb-3">
+                        <h4 class="text-xl md:text-2xl font-semibold mb-3">
                             You always know what’s happening
                         </h4>
-                        <p class="text-[18px] text-[#061016]">
+                        <p class="text-[16px] md:text-[18px] leading-tight text-[#061016]">
                             You see every stage, timeline, and progress update. No «silent development» — everything is
                             transparent and under control
                         </p>
                     </div>
                     <div class="block">
                         <span
-                            class="w-10 h-10 flex items-center justify-center bg-[#0D202B] rounded mb-[18px] text-[#ECF5FB] text-[18px] font-bold">
+                            class="w-8 md:w-10 h-8 md:h-10 flex items-center justify-center bg-[#0D202B] rounded mb-[18px] text-[#ECF5FB] text-sm md:text-[18px] font-bold">
                             5
                         </span>
 
-                        <h4 class="text-2xl font-semibold mb-3">
+                        <h4 class="text-xl md:text-2xl font-semibold mb-3">
                             Post-Launch Support
                         </h4>
-                        <p class="text-[18px] text-[#061016]">
+                        <p class="text-[16px] md:text-[18px] leading-tight text-[#061016]">
                             We continue supporting your product after launch — helping you enhance features, expand
                             functionality, and adapt to new business needs
                         </p>
@@ -859,23 +882,23 @@
     <!-- Guarantee end -->
 
     <!-- Technologies ------>
-    <section class="pt-22 py-15" id="technologies">
+    <section class="md:pt-22 py-7.5 md:py-15" id="technologies">
         <div class="auto_container">
             <div class="inner">
-                <div class="grid grid-cols-3 gap-x-5 gap-y-15">
-                    <div class="block max-w-100">
-                        <h2 class="row-span-2 text-[36px] font-bold mb-[18px] leading-tight">
+                <div class="grid lg:grid-cols-3 gap-x-5 gap-y-15">
+                    <div class="block lg:max-w-100">
+                        <h2 class="row-span-2 text-[26px] lg:text-[36px] font-bold mb-[18px] leading-tight">
                             <span class="text-[#419FD9]"> Security, Stability, and Control</span>
                             at Every Stage of Development
                         </h2>
-                        <p class="text-2xl text-[#061016] leading-tight">
+                        <p class="text-[16px] md:text-2xl text-[#061016] leading-tight">
                             We build systems that handle high load, pass audits, and comply with U.S. business
                             requirements
                         </p>
                     </div>
 
-                    <div class="block col-span-2">
-                        <div class="border-0 border-solid border-t border-b border-[#419FD9] py-10 ">
+                    <div class="block lg:col-span-2">
+                        <div class="border-0 border-solid border-t border-b border-[#419FD9] py-6 md:py-10">
                             <span class="flex items-center justify-center w-[32px] h-[32px] ">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -895,16 +918,16 @@
                                 </svg>
                             </span>
 
-                            <h4 class="text-2xl font-semibold my-[15px]">
+                            <h4 class="text-xl md:text-2xl font-semibold my-[15px]">
                                 Code Review & Quality Standards
                             </h4>
-                            <p class="text-[18px] text-[#061016] ">
+                            <p class="text-[16px] md:text-[18px] text-[#061016] ">
                                 Each module undergoes internal review by senior developers. We follow clean architecture
                                 principles and SOLID standards
                             </p>
                         </div>
 
-                        <div class="border-0 border-solid border-t border-b border-[#419FD9] py-10 ">
+                        <div class="border-0 border-solid border-t border-b border-[#419FD9] py-6 md:py-10">
                             <span class="flex items-center justify-center w-[32px] h-[32px] ">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -939,15 +962,15 @@
                                 </svg>
                             </span>
 
-                            <h4 class="text-2xl font-semibold my-[15px]">
+                            <h4 class="text-xl md:text-2xl font-semibold my-[15px]">
                                 Testing at Every Stage
                             </h4>
-                            <p class="text-[18px] text-[#061016] ">
+                            <p class="text-[16px] md:text-[18px] text-[#061016] ">
                                 Automated and manual testing: Selenium, Codeception, and API testing via Swagger
                             </p>
                         </div>
 
-                        <div class="border-0 border-solid border-t border-b border-[#419FD9] py-10 ">
+                        <div class="border-0 border-solid border-t border-b border-[#419FD9] py-6 md:py-10">
                             <span class="flex items-center justify-center w-[32px] h-[32px] ">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -975,15 +998,15 @@
                                 </svg>
                             </span>
 
-                            <h4 class="text-2xl font-semibold my-[15px]">
+                            <h4 class="text-xl md:text-2xl font-semibold my-[15px]">
                                 Data & Access Protection
                             </h4>
-                            <p class="text-[18px] text-[#061016] ">
+                            <p class="text-[16px] md:text-[18px] text-[#061016] ">
                                 Role-based access control, data encryption, API protection, and secure authentication
                             </p>
                         </div>
 
-                        <div class="border-0 border-solid border-t border-b border-[#419FD9] py-10 ">
+                        <div class="border-0 border-solid border-t border-b border-[#419FD9] py-6 md:py-10">
                             <span class="flex items-center justify-center w-[32px] h-[32px] ">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1011,15 +1034,15 @@
                                 </svg>
                             </span>
 
-                            <h4 class="text-2xl font-semibold my-[15px]">
+                            <h4 class="text-xl md:text-2xl font-semibold my-[15px]">
                                 Resilient Infrastructure with Redundancy
                             </h4>
-                            <p class="text-[18px] text-[#061016] ">
+                            <p class="text-[16px] md:text-[18px] text-[#061016] ">
                                 AWS-based fault-tolerant architecture: EC2, RDS, S3, with backups and monitoring
                             </p>
                         </div>
 
-                        <div class="border-0 border-solid border-t border-b border-[#419FD9] py-10 ">
+                        <div class="border-0 border-solid border-t border-b border-[#419FD9] py-6 md:py-10">
                             <span class="flex items-center justify-center w-[32px] h-[32px] ">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1049,15 +1072,15 @@
                                 </svg>
                             </span>
 
-                            <h4 class="text-2xl font-semibold my-[15px]">
+                            <h4 class="text-xl md:text-2xl font-semibold my-[15px]">
                                 Performance Monitoring & Optimization
                             </h4>
-                            <p class="text-[18px] text-[#061016] ">
+                            <p class="text-[16px] md:text-[18px] text-[#061016] ">
                                 Query optimization and work with ClickHouse and PostgreSQL for high-load systems
                             </p>
                         </div>
 
-                        <div class="border-0 border-solid border-t border-b border-[#419FD9] py-10 ">
+                        <div class="border-0 border-solid border-t border-b border-[#419FD9] py-6 md:py-10">
                             <span class="flex items-center justify-center w-[32px] h-[32px] ">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1083,10 +1106,10 @@
                                 </svg>
                             </span>
 
-                            <h4 class="text-2xl font-semibold my-[15px]">
+                            <h4 class="text-xl md:text-2xl font-semibold my-[15px]">
                                 Documentation & Transparency
                             </h4>
-                            <p class="text-[18px] text-[#061016] ">
+                            <p class="text-[16px] md:text-[18px] text-[#061016] ">
                                 Technical documentation, API specifications, architectural diagrams, and defined project
                                 checkpoints
                             </p>
@@ -1099,30 +1122,30 @@
     <!-- Technologies end -->
 
     <!-- Results --- -->
-    <section class="pt-22 py-15" id="about-us">
+    <section class="md:pt-22 py-7.5 md:py-15" id="about-us">
         <div class="auto_container">
             <div class="inner">
                 <div class="block max-w-[850px]">
-                    <h1 class="text-[36px] font-bold mb-10 leading-tight mb-[18px]">
+                    <h1 class="text-[26px] lg:text-[36px] font-bold mb-10 leading-tight mb-[18px]">
                         <span class="text-[#419FD9]"> Who Stands</span>
                         Behind Your Project’s Results
                     </h1>
-                    <p class="text-2xl text-[#061016] leading-tight">
+                    <p class="text-[16px] md:text-2xl text-[#061016] leading-tight">
                         EMSOFT is a team of senior developers, architects, and project managers building custom web
                         systems
                         for mid-sized businesses in the U.S.
                     </p>
                 </div>
 
-                <div class="grid grid-cols-2 mt-10 gap-5">
+                <div class="grid lg:grid-cols-2 mt-10 gap-5">
                     <div class="block">
                         <img class="w-full object-contain" src="assets/images/result.png" alt="reslut-photo">
                     </div>
 
-                    <div class="block">
+                    <div class="flex flex-col-reverse lg:flex-col">
 
-                        <div class="block bg-[#419FD9] rounded-xl p-5 mb-[18px]">
-                            <h6 class="text-[30px] text-white leading-tight font-medium mb-2">
+                        <div class="block bg-[#419FD9] rounded-xl p-5 mt-5 lg:mb-[18px]">
+                            <h6 class="text-xl md:text-[30px] text-white leading-tight font-medium mb-2">
                                 Mission
                             </h6>
                             <p class="text-[18px] text-white leading-tight">
@@ -1130,111 +1153,111 @@
                             </p>
                         </div>
 
-                        <h6 class="text-[#061016] text-[18px] mb-[18px]">
-                            We design and launch solutions that:
-                        </h6>
+                        <div class="block">
+                            <h6 class="text-[#061016] text-[18px] mb-[18px]">
+                                We design and launch solutions that:
+                            </h6>
 
-                        <div class="flex flex-col gap-3">
-                            <div class="flex items-center gap-[18px]">
-                                <span class="block w-8">
-                                    <svg class="block object-contain" width="25" height="18" viewBox="0 0 25 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 10L8 17L24 1" stroke="#419FD9" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
+                            <div class="flex flex-col gap-3">
+                                <div class="flex items-center gap-[18px]">
+                                    <span class="block w-8">
+                                        <svg class="block object-contain" width="25" height="18" viewBox="0 0 25 18"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 10L8 17L24 1" stroke="#419FD9" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
 
-                                <p class="text-[18px] font-normal leading-none">
-                                    automate business processes
-                                </p>
+                                    <p class="text-[16px] md:text-[18px] font-normal leading-none">
+                                        automate business processes
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-[18px]">
+                                    <span class="block w-8">
+                                        <svg class="block object-contain" width="25" height="18" viewBox="0 0 25 18"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 10L8 17L24 1" stroke="#419FD9" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+
+                                    <p class="text-[16px] md:text-[18px] font-normal leading-none">
+                                        reduce operational costs
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-[18px]">
+                                    <span class="block w-8">
+                                        <svg class="block object-contain" width="25" height="18" viewBox="0 0 25 18"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 10L8 17L24 1" stroke="#419FD9" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+
+                                    <p class="text-[16px] md:text-[18px] font-normal leading-none">
+                                        scale as your company grows
+                                    </p>
+                                </div>
                             </div>
-                            <div class="flex items-center gap-[18px]">
-                                <span class="block w-8">
-                                    <svg class="block object-contain" width="25" height="18" viewBox="0 0 25 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 10L8 17L24 1" stroke="#419FD9" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
 
-                                <p class="text-[18px] font-normal leading-none">
-                                    reduce operational costs
-                                </p>
-                            </div>
-                            <div class="flex items-center gap-[18px]">
-                                <span class="block w-8">
-                                    <svg class="block object-contain" width="25" height="18" viewBox="0 0 25 18"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 10L8 17L24 1" stroke="#419FD9" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-
-                                <p class="text-[18px] font-normal leading-none">
-                                    scale as your company grows
-                                </p>
-                            </div>
+                            <p class="text-[#061016] text-[16px] md:text-[18px] mt-[18px]">
+                                We follow commercial-grade development standards and build long-term partnerships — not
+                                one-time projects
+                            </p>
                         </div>
-
-                        <p class="text-[#061016] text-[18px] mt-[18px]">
-                            We follow commercial-grade development standards and build long-term partnerships — not
-                            one-time projects
-                        </p>
-
-
                     </div>
                 </div>
 
-                <div class="grid grid-cols-4 gap-5 mt-[60px]">
-                    <div class="block p-6.5 boreder-solid border-0 border-l-[2px] border-[#419FD9]">
-                        <h4 class="text-2xl font-semibold mb-[18px] leading-tight">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-6 md:mt-15">
+                    <div class="block px-5 py-3 md:p-6.5 boreder-solid border-0 border-l-[2px] border-[#419FD9]">
+                        <h4 class="text-xl md:text-2xl font-semibold mb-[18px] leading-tight">
                             15+ <br>
                             years
                         </h4>
 
-                        <p class="text-[18px] text-[#061016] leading-tight">
+                        <p class="text-[16px] md:text-[18px] text-[#061016] leading-tight">
                             of commercial experience building complex web systems
                         </p>
                     </div>
 
-                    <div class="block p-6.5 boreder-solid border-0 border-l-[2px] border-[#419FD9]">
-                        <h4 class="text-2xl font-semibold mb-[18px] leading-tight">
+                    <div class="block px-5 py-3 md:p-6.5 boreder-solid border-0 border-l-[2px] border-[#419FD9]">
+                        <h4 class="text-xl md:text-2xl font-semibold mb-[18px] leading-tight">
                             150+<br>
                             completed projects
                         </h4>
 
-                        <p class="text-[18px] text-[#061016] leading-tight">
+                        <p class="text-[16px] md:text-[18px] text-[#061016] leading-tight">
                             for small and mid-sized businesses
                         </p>
                     </div>
 
-                    <div class="block p-6.5 boreder-solid border-0 border-l-[2px] border-[#419FD9]">
-                        <h4 class="text-2xl font-semibold mb-[18px] leading-tight">
+                    <div class="block px-5 py-3 md:p-6.5 boreder-solid border-0 border-l-[2px] border-[#419FD9]">
+                        <h4 class="text-xl md:text-2xl font-semibold mb-[18px] leading-tight">
                             20+ technologies
                             and integrations
                         </h4>
 
-                        <p class="text-[18px] text-[#061016] leading-tight">
+                        <p class="text-[16px] md:text-[18px] text-[#061016] leading-tight">
                             CRM, ERP, payment systems, APIs, cloud infrastructure
                         </p>
                     </div>
 
-                    <div class="block p-6.5 boreder-solid border-0 border-l-[2px] border-[#419FD9]">
-                        <h4 class="text-2xl font-semibold mb-[18px] leading-tight">
+                    <div class="block px-5 py-3 md:p-6.5 boreder-solid border-0 border-l-[2px] border-[#419FD9]">
+                        <h4 class="text-xl md:text-2xl font-semibold mb-[18px] leading-tight">
                             100 %<br>
                             senior-level team
                         </h4>
 
-                        <p class="text-[18px] text-[#061016] leading-tight">
+                        <p class="text-[16px] md:text-[18px] text-[#061016] leading-tight">
                             no junior developers on production projects
                         </p>
                     </div>
                 </div>
 
-                <h1 class="text-2xl font-medium text-center max-w-[650px] mx-auto mt-[60px] italic">
+                <h1 class="text-xl md:text-2xl font-medium text-center max-w-[650px] mx-auto mt-15 italic">
                     «We design systems to deliver measurable business results — in profitability, speed, and operational
                     control.»
-                    <span class="text-[#419FD9] block">
+                    <span class="text-[#419FD9] md:block">
                         — Founder of EMSOFT
                     </span>
                 </h1>
@@ -1247,16 +1270,16 @@
     <section class="pt-20 relative py-15 overflow-hidden" id="reviews">
         <div class="auto_container relative">
             <div class="inner relative">
-                <div class="flex items-center justify-between mb-10 gap-6">
+                <div class="flex lg:items-center justify-between flex-col lg:flex-row mb-[18px] md:mb-10 gap-6">
                     <div class="block">
-                        <h2 class="row-span-2 text-[36px] font-bold leading-tight">
+                        <h2 class="row-span-2 text-[26px] lg:text-[36px] font-bold leading-tight">
                             Google
                             <span class="text-[#419FD9]">Reviews</span>
                         </h2>
                         <div class="flex items-center mt-4.5">
-                            <span>
-                                <svg width="208" height="40" viewBox="0 0 208 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                            <span class="block w-35 md:w-fit">
+                                <svg class="w-full h-full object-contain" width="208" height="40" viewBox="0 0 208 40"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M18.0979 5.8541C18.6966 4.01148 21.3034 4.01148 21.9021 5.8541L24.0413 12.4377C24.309 13.2617 25.0769 13.8197 25.9434 13.8197H32.8658C34.8032 13.8197 35.6088 16.2989 34.0413 17.4377L28.441 21.5066C27.74 22.0159 27.4467 22.9186 27.7145 23.7426L29.8536 30.3262C30.4523 32.1689 28.3433 33.7011 26.7759 32.5623L21.1756 28.4934C20.4746 27.9841 19.5254 27.9841 18.8244 28.4934L13.2241 32.5623C11.6567 33.7011 9.5477 32.1689 10.1464 30.3262L12.2855 23.7426C12.5533 22.9186 12.26 22.0159 11.559 21.5066L5.95867 17.4377C4.39124 16.2989 5.19679 13.8197 7.13424 13.8197H14.0566C14.9231 13.8197 15.691 13.2617 15.9587 12.4377L18.0979 5.8541Z"
                                         fill="#F0AD4E" />
@@ -1281,9 +1304,9 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-3 h-10 md:h-15 ml-auto">
                         <button
-                            class="swiper-button-prev reviews-prev group relative! top-0! left-0! right-0! bottom-0! w-15! h-15! flex items-center justify-center rounded-full border border-[#C6E2F4] bg-white shadow-[0_0_8px_rgba(0,0,0,0.08)] hover:bg-[#419FD9] hover:text-white after:hidden transition-colors duration-200">
+                            class="swiper-button-prev reviews-prev block group relative! left-0! right-0! top-[10px]! w-10! md:w-15! h-10! md:h-15! flex items-center justify-center rounded-full border border-[#C6E2F4] bg-white shadow-[0_0_8px_rgba(0,0,0,0.08)] hover:bg-[#419FD9] hover:text-white after:hidden transition-colors duration-200">
                             <svg class="w-2.5! h-5! object-contain" width="12" height="22" viewBox="0 0 12 22"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11 1L1 11L11 21"
@@ -1292,7 +1315,7 @@
                             </svg>
                         </button>
                         <button
-                            class="swiper-button-next reviews-next group relative! top-0! left-0! right-0! bottom-0! w-15! h-15! flex items-center justify-center rounded-full border border-[#C6E2F4] bg-white shadow-[0_0_8px_rgba(0,0,0,0.12)] hover:bg-[#419FD9] hover:text-white after:hidden transition-colors duration-200">
+                            class="swiper-button-next reviews-next block group relative! left-0! right-0! top-[10px]! w-10! md:w-15! h-10! md:h-15! flex items-center justify-center rounded-full border border-[#C6E2F4] bg-white shadow-[0_0_8px_rgba(0,0,0,0.12)] hover:bg-[#419FD9] hover:text-white after:hidden transition-colors duration-200">
                             <svg class="w-2.5! h-5! object-contain" width="12" height="22" viewBox="0 0 12 22"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 1L11 11L1 21"
@@ -1592,7 +1615,7 @@
 
                 <div class="flex justify-center mt-10">
                     <a href="#"
-                        class="text-[18px] font-semibold cursor-pointer text-white bg-[#419FD9] py-5! px-8! text-center rounded-lg flex items-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
+                        class="text-[16px] md:text-[18px] font-semibold cursor-pointer text-white bg-[#419FD9] py-5! px-8! text-center rounded-lg flex items-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
                         Our Reviews
 
                         <span class="block w-6">
@@ -1615,11 +1638,11 @@
         <div class="auto_container">
             <div class="inner">
                 <div class="block max-w-[1060px]">
-                    <h1 class="text-[36px] font-bold mb-10 leading-tight mb-[18px]">
+                    <h1 class="text-[26px] lg:text-[36px] font-bold leading-tight mb-[18px]">
                         <span class="text-[#419FD9]"> Ready to discuss</span>
                         your project?
                     </h1>
-                    <p class="text-2xl text-[#061016] leading-tight">
+                    <p class="text-[16px] md:text-2xl text-[#061016] leading-tight">
                         We don’t sell «development for the sake of development.» We build systems that automate
                         processes, reduce costs, scale with your business, and deliver measurable results
                     </p>
@@ -1736,7 +1759,7 @@
                         </div>
 
                         <button type="submit"
-                            class="text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-5! px-8! text-center rounded-lg flex items-center justify-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
+                            class="text-[16px] md:text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-5! px-8! text-center rounded-lg flex items-center justify-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
                             Submit Request
 
                             <span class="block w-6">
@@ -1873,7 +1896,7 @@
             var reviewsSwiperEl = document.querySelector(".reviews-swiper");
             if (reviewsSwiperEl) {
                 new Swiper(reviewsSwiperEl, {
-                    slidesPerView: 1.1,
+                    slidesPerView: 1,
                     loop: true,
                     spaceBetween: 20,
                     breakpoints: {
