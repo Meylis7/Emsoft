@@ -26,41 +26,52 @@
                     Em<span class="text-[#419FD9]">soft</span>
                 </a>
 
-                <div class="hidden xl:block ">
-                    <ul class="flex items-center gap-10">
+                <div id="nav-wrapper"
+                    class="absolute top-full left-0 w-full bg-white backdrop-blur-md flex flex-col items-center gap-8 py-10 border-b border-[#275F82] shadow-lg transition-all duration-300 ease-in-out opacity-0 invisible -translate-y-4 xl:contents xl:opacity-100 xl:visible xl:translate-y-0">
+                    <ul class="flex flex-col items-center gap-6 xl:flex-row xl:gap-10">
                         <li>
-                            <a href="#works" class="text-[16px] font-normal cursor-pointer">Latest from Work</a>
+                            <a href="#works"
+                                class="text-[18px] xl:text-[16px] font-medium xl:font-normal cursor-pointer hover:text-[#419FD9] transition-colors">Latest
+                                from Work</a>
                         </li>
                         <li>
-                            <a href="#services" class="text-[16px] font-normal cursor-pointer">Services</a>
+                            <a href="#services"
+                                class="text-[18px] xl:text-[16px] font-medium xl:font-normal cursor-pointer hover:text-[#419FD9] transition-colors">Services</a>
                         </li>
                         <li>
-                            <a href="#technologies" class="text-[16px] font-normal cursor-pointer">Technologies</a>
+                            <a href="#technologies"
+                                class="text-[18px] xl:text-[16px] font-medium xl:font-normal cursor-pointer hover:text-[#419FD9] transition-colors">Technologies</a>
                         </li>
                         <li>
-                            <a href="#about-us" class="text-[16px] font-normal cursor-pointer">About Us</a>
+                            <a href="#about-us"
+                                class="text-[18px] xl:text-[16px] font-medium xl:font-normal cursor-pointer hover:text-[#419FD9] transition-colors">About
+                                Us</a>
                         </li>
                         <li>
-                            <a href="#reviews" class="text-[16px] font-normal cursor-pointer">Reviews</a>
+                            <a href="#reviews"
+                                class="text-[18px] xl:text-[16px] font-medium xl:font-normal cursor-pointer hover:text-[#419FD9] transition-colors">Reviews</a>
                         </li>
                         <li>
-                            <a href="#contact" class="text-[16px] font-normal cursor-pointer">Contact</a>
+                            <a href="#contact"
+                                class="text-[18px] xl:text-[16px] font-medium xl:font-normal cursor-pointer hover:text-[#419FD9] transition-colors">Contact</a>
                         </li>
                     </ul>
+
+                    <div class="flex flex-col items-center gap-4 xl:flex-row xl:gap-4">
+                        <a href="mailto:sales@emsoftmn.com"
+                            class="text-[16px] font-medium! text-black cursor-pointer hover:text-[#419FD9] transition-colors">
+                            sales@emsoftmn.com
+                        </a>
+
+                        <a href="#"
+                            class="text-[16px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-3 min-w-[210px] text-center rounded-lg hover:bg-[#358cc5] transition-colors">
+                            Get a Consultation
+                        </a>
+                    </div>
                 </div>
 
-                <div class="xl:flex items-center gap-4 hidden">
-                    <a href="mailto:sales@emsoftmn.com" class="text-[16px] font-medium! text-black cursor-pointer">
-                        sales@emsoftmn.com.com
-                    </a>
-
-                    <a href="#"
-                        class="text-[16px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-3 min-w-[210px] text-center rounded-lg">
-                        Get a Consultation
-                    </a>
-                </div>
-
-                <button type="button" class="cursor-pointer block w-10 h-10 xl:hidden">
+                <button type="button" id="mobile-menu-btn" onclick="toggleMobileMenu()"
+                    class="cursor-pointer block w-10 h-10 xl:hidden z-50 relative">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="40" height="40" rx="4" fill="white" />
                         <path d="M11 13H33" stroke="#419FD9" stroke-width="2" stroke-linecap="round"
@@ -167,8 +178,12 @@
                 </div>
 
                 <div
-                    class="block w-150 lg:w-175 absolute top-[50%] -right-20 md:right-0 translate-y-[-50%] -z-1 opacity-50 xl:opacity-100">
+                    class="hidden md:block w-150 lg:w-175 absolute top-[50%] -right-40 md:right-0 translate-y-[-50%] -z-1 opacity-50 xl:opacity-100">
                     <img src="assets/images/lamp.png" alt="lamp-icon">
+                </div>
+                <div
+                    class="block md:hidden w-120 absolute top-[50%] -right-40 md:right-0 translate-y-[-50%] -z-1 opacity-50 xl:opacity-100">
+                    <img src="assets/images/mobile-lamp.png" alt="lamp-icon">
                 </div>
             </div>
         </div>
@@ -185,7 +200,7 @@
                 </h1>
 
                 <div
-                    class="flex flex-col md:flex-row items-center justify-center relative py-15 border border-solid border-[#C6E2F4] rounded-[20px] p-5 bg-[linear-gradient(90.64deg,_rgba(236,245,251,0.3)_0.35%,_rgba(103,178,224,0.3)_109.61%)]">
+                    class="flex flex-col md:flex-row items-center justify-center relative py-10 md:py-15 gap-6 border border-solid border-[#C6E2F4] rounded-[20px] p-5 bg-[linear-gradient(90.64deg,_rgba(236,245,251,0.3)_0.35%,_rgba(103,178,224,0.3)_109.61%)]">
                     <div class="block md:absolute md:top-6.5 md:left-[32px]  sm:w-[312px]">
                         <img class="w-full object-contain" src="assets/images/robot-head.png" alt="robot-head">
                     </div>
@@ -295,7 +310,7 @@
     <!-- Clients end -->
 
     <!-- Latest work --- -->
-    <section class="relative py-7.5 md:py-15 overflow-hidden">
+    <section class="relative pt-17 py-7.5 md:py-15 overflow-hidden" id="works">
         <div class="auto_container relative">
             <div class="inner relative">
                 <div class="flex items-center justify-between mb-6 md:mb-10 gap-6">
@@ -541,13 +556,29 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="flex items-center justify-center mt-6 md:mt-10">
+                    <a href="#"
+                        class="text-[16px] md:text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] w-full md:w-fit py-4! md:py-5! px-8! text-center rounded-lg flex items-center justify-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
+                        View All latest works
+
+                        <span class="block w-6">
+                            <svg class="block w-ull object-contain" width="25" height="11" viewBox="0 0 25 11"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.495 5.64976C24.7683 5.37639 24.7683 4.93318 24.495 4.65981L20.0402 0.205038C19.7668 -0.0683293 19.3236 -0.0683293 19.0503 0.205038C18.7769 0.478405 18.7769 0.92162 19.0503 1.19499L23.01 5.15479L19.0503 9.11458C18.7769 9.38795 18.7769 9.83117 19.0503 10.1045C19.3236 10.3779 19.7668 10.3779 20.0402 10.1045L24.495 5.64976ZM0 5.15479V5.85479H24V5.15479V4.45479H0V5.15479Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
     <!-- Latest work end -->
 
     <!-- Services --- -->
-    <section class="md:pt-22 py-7.5 md:py-15" id="services">
+    <section class="pt-17 md:pt-22 py-7.5 md:py-15" id="services">
         <div class="auto_container">
             <div class="inner">
                 <div class="block">
@@ -767,7 +798,7 @@
 
                     <div class="flex items-center justify-center flex-col md:flex-row gap-4 mt-10">
                         <a href="#"
-                            class="w-full md:w-fit text-[16px] md:text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-5! px-8! text-center rounded-lg flex items-center justify-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
+                            class="w-full md:w-fit text-[16px] md:text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-4! md:py-5! px-8! text-center rounded-lg flex items-center justify-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
                             Choose Services for Your Project
 
                             <span class="block w-6">
@@ -781,7 +812,7 @@
                         </a>
 
                         <a href="#"
-                            class="w-full md:w-fit text-[16px] md:text-[18px] font-semibold leading-tight text-center py-5 px-8 border border-solid border-[#419FD9] rounded-lg">
+                            class="w-full md:w-fit text-[16px] md:text-[18px] font-semibold leading-tight text-center py-4 md:py-5 px-8 border border-solid border-[#419FD9] rounded-lg">
                             Request a Proposal
                         </a>
                     </div>
@@ -882,7 +913,7 @@
     <!-- Guarantee end -->
 
     <!-- Technologies ------>
-    <section class="md:pt-22 py-7.5 md:py-15" id="technologies">
+    <section class="pt-17 md:pt-22 py-7.5 md:py-15" id="technologies">
         <div class="auto_container">
             <div class="inner">
                 <div class="grid lg:grid-cols-3 gap-x-5 gap-y-15">
@@ -1122,7 +1153,7 @@
     <!-- Technologies end -->
 
     <!-- Results --- -->
-    <section class="md:pt-22 py-7.5 md:py-15" id="about-us">
+    <section class="pt-17 md:pt-22 py-7.5 md:py-15" id="about-us">
         <div class="auto_container">
             <div class="inner">
                 <div class="block max-w-[850px]">
@@ -1267,7 +1298,11 @@
     <!-- Results end -->
 
     <!-- Reviews --- -->
-    <section class="pt-20 relative py-15 overflow-hidden" id="reviews">
+    <section class="pt-17 md:pt-20 relative py-7.5 md:py-15 overflow-hidden" id="reviews">
+        <div
+            class="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(360deg,_rgba(236,245,251,0.2)_0.92%,_rgba(103,178,224,0.2)_50.05%,_rgba(236,245,251,0.2)_92.17%)] filter blur-[20px]">
+        </div>
+
         <div class="auto_container relative">
             <div class="inner relative">
                 <div class="flex lg:items-center justify-between flex-col lg:flex-row mb-[18px] md:mb-10 gap-6">
@@ -1298,7 +1333,7 @@
                                 </svg>
                             </span>
 
-                            <p class="text-2xl leading-tight ml-3">
+                            <p class="text-sm md:text-2xl leading-tight ml-3">
                                 5.0 rating
                             </p>
                         </div>
@@ -1615,7 +1650,7 @@
 
                 <div class="flex justify-center mt-10">
                     <a href="#"
-                        class="text-[16px] md:text-[18px] font-semibold cursor-pointer text-white bg-[#419FD9] py-5! px-8! text-center rounded-lg flex items-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
+                        class="text-[16px] md:text-[18px] font-semibold cursor-pointer text-white bg-[#419FD9] py-4! md:py-5! px-8! text-center rounded-lg flex items-center justify-center w-full md:w-fit gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
                         Our Reviews
 
                         <span class="block w-6">
@@ -1634,7 +1669,7 @@
     <!-- Reviews end -->
 
     <!-- Contact --- -->
-    <section class="py-15 pb-30" id="contact">
+    <section class="pt-17 py-7.5 md:py-15 pb-15 md:pb-30" id="contact">
         <div class="auto_container">
             <div class="inner">
                 <div class="block max-w-[1060px]">
@@ -1648,9 +1683,9 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-2 gap-5 mt-15">
+                <div class="grid md:grid-cols-2 gap-5 mt-6 md:mt-15">
                     <div class="block">
-                        <h6 class="font-semibold text-2xl mb-4.5">
+                        <h6 class="font-semibold text-xl md:text-2xl mb-4.5">
                             What you’ll receive after contacting us:
                         </h6>
 
@@ -1664,7 +1699,7 @@
                                     </svg>
                                 </span>
 
-                                <p class="text-4.5 font-normal leading-none">
+                                <p class="text-[16px] md:text-[18px] font-normal leading-none">
                                     Preliminary timeline and budget estimate
                                 </p>
                             </div>
@@ -1677,7 +1712,7 @@
                                     </svg>
                                 </span>
 
-                                <p class="text-4.5 font-normal leading-none">
+                                <p class="text-[16px] md:text-[18px] font-normal leading-none">
                                     Architecture recommendations
                                 </p>
                             </div>
@@ -1690,7 +1725,7 @@
                                     </svg>
                                 </span>
 
-                                <p class="text-4.5 font-normal leading-none">
+                                <p class="text-[16px] md:text-[18px] font-normal leading-none">
                                     Recommended tech stack and engagement model
                                 </p>
                             </div>
@@ -1703,7 +1738,7 @@
                                     </svg>
                                 </span>
 
-                                <p class="text-4.5 font-normal leading-none">
+                                <p class="text-[16px] md:text-[18px] font-normal leading-none">
                                     A clear launch roadmap
                                 </p>
                             </div>
@@ -1717,12 +1752,12 @@
                     <form action="#" class="flex flex-col gap-4.5">
                         <div class="block w-full">
                             <input type="text" placeholder="Your Name"
-                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md py-5.5 px-5 placeholder:text-[#5D5D5D]/80 text-sm font-normal leading-tight">
+                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md py-5 md:py-5.5 px-5 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight">
                         </div>
 
                         <div class="block w-full">
                             <input type="text" placeholder="Your Email"
-                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md py-5.5 px-5 placeholder:text-[#5D5D5D]/80 text-sm font-normal leading-tight">
+                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md py-5 md:py-5.5 px-5 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight">
                         </div>
 
                         <div class="block w-full relative">
@@ -1755,11 +1790,11 @@
                                 </p>
                             </div>
                             <input type="number" placeholder="(000) 00000"
-                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md py-5.5 px-5 pl-18 placeholder:text-[#5D5D5D]/80 text-sm font-normal leading-tight">
+                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md py-5 md:py-5.5 px-5 pl-18 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight">
                         </div>
 
                         <button type="submit"
-                            class="text-[16px] md:text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-5! px-8! text-center rounded-lg flex items-center justify-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
+                            class="text-[16px] md:text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-4! md:py-5! px-8! text-center rounded-lg flex items-center justify-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
                             Submit Request
 
                             <span class="block w-6">
@@ -1781,13 +1816,13 @@
     <!-- Footer -->
     <Footer class="block py-5 bg-[#0D202B] mt-auto">
         <div class="auto_container">
-            <div class="inner grid grid-cols-4 gap-5">
+            <div class="inner grid lg:grid-cols-4 gap-5">
                 <div class="block">
-                    <a href="index.html" class="block text-[40px] font-extrabold uppercase text-white">
+                    <a href="index.html" class="block text-[28px] md:text-[40px] font-extrabold uppercase text-white">
                         Em<span class="text-[#419FD9]">soft</span>
                     </a>
 
-                    <p class="text-sm font-normal mt-5 max-w-52.5 text-white">
+                    <p class="text-sm font-normal mt-5 lg:max-w-52.5 text-white">
                         Transforming Ideas into Digital Realities with Expert Web Development
                     </p>
                 </div>
@@ -1832,18 +1867,18 @@
                     </a>
 
                     <a href="#"
-                        class="text-[16px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-3 min-w-[210px] text-center rounded-lg">
+                        class="text-[16px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-3 min-w-[210px] text-center rounded-lg w-fit">
                         Get a Consultation
                     </a>
                 </div>
 
                 <div
-                    class="flex items-center col-span-4 justify-between border-solid border-0 border-t-[0.4px] border-t-[#FAFAFA] pt-5 mt-16.5">
+                    class="flex lg:items-center justify-between flex-col lg:flex-row gap-3 lg:col-span-4 border-solid border-0 border-t-[0.4px] border-t-[#FAFAFA] pt-5 mt-10 md:mt-16.5">
                     <h6 class="text-sm text-[#A7A7A7] leading-tight">
                         Copyright © 2020-2026 EMSOFT
                     </h6>
 
-                    <ul class="flex items-center gap-5.5">
+                    <ul class="flex lg:items-center flex-col lg:flex-row gap-3 md:gap-5.5">
                         <li>
                             <a href="#" class="text-sm text-[#A7A7A7] leading-tight">
                                 Consent to the Processing of Personal Data
@@ -1868,6 +1903,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var trustedSwiperEl = document.querySelector(".works-swiper");
@@ -1916,20 +1952,7 @@
                 });
             }
 
-            // Header Scroll Effect
-            const header = document.getElementById('main-header');
-
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    header.classList.remove('py-5');
-                    header.classList.add('py-3', 'shadow-md', 'bg-white');
-                    header.classList.remove('bg-white/80', 'backdrop-blur-md');
-                } else {
-                    header.classList.add('py-5');
-                    header.classList.remove('py-3', 'shadow-md', 'bg-white');
-                    header.classList.add('bg-white/80', 'backdrop-blur-md');
-                }
-            });
+           
         });
     </script>
 

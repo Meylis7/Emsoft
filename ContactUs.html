@@ -17,7 +17,7 @@
 <body>
     <!-- Header -->
     <header
-        class="block py-5 border-0 border-b-[0.4px] border-[#275F82] fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md"
+        class="block py-5 border-0 lg:border-b-[0.4px] border-[#275F82] fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/80 backdrop-blur-md"
         id="main-header">
         <div class="auto_container">
             <div class="inner flex items-center justify-between">
@@ -25,37 +25,62 @@
                     Em<span class="text-[#419FD9]">soft</span>
                 </a>
 
-                <ul class="flex items-center gap-10">
-                    <li>
-                        <a href="#works" class="text-[16px] font-normal cursor-pointer">Latest from Work</a>
-                    </li>
-                    <li>
-                        <a href="#services" class="text-[16px] font-normal cursor-pointer">Services</a>
-                    </li>
-                    <li>
-                        <a href="#technologies" class="text-[16px] font-normal cursor-pointer">Technologies</a>
-                    </li>
-                    <li>
-                        <a href="#about-us" class="text-[16px] font-normal cursor-pointer">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#reviews" class="text-[16px] font-normal cursor-pointer">Reviews</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="text-[16px] font-normal cursor-pointer">Contact</a>
-                    </li>
-                </ul>
+                <div id="nav-wrapper"
+                    class="absolute top-full left-0 w-full bg-white backdrop-blur-md flex flex-col items-center gap-8 py-10 border-b border-[#275F82] shadow-lg transition-all duration-300 ease-in-out opacity-0 invisible -translate-y-4 xl:contents xl:opacity-100 xl:visible xl:translate-y-0">
+                    <ul class="flex flex-col items-center gap-6 xl:flex-row xl:gap-10">
+                        <li>
+                            <a href="#works"
+                                class="text-[18px] xl:text-[16px] font-medium xl:font-normal cursor-pointer hover:text-[#419FD9] transition-colors">Latest
+                                from Work</a>
+                        </li>
+                        <li>
+                            <a href="#services"
+                                class="text-[18px] xl:text-[16px] font-medium xl:font-normal cursor-pointer hover:text-[#419FD9] transition-colors">Services</a>
+                        </li>
+                        <li>
+                            <a href="#technologies"
+                                class="text-[18px] xl:text-[16px] font-medium xl:font-normal cursor-pointer hover:text-[#419FD9] transition-colors">Technologies</a>
+                        </li>
+                        <li>
+                            <a href="#about-us"
+                                class="text-[18px] xl:text-[16px] font-medium xl:font-normal cursor-pointer hover:text-[#419FD9] transition-colors">About
+                                Us</a>
+                        </li>
+                        <li>
+                            <a href="#reviews"
+                                class="text-[18px] xl:text-[16px] font-medium xl:font-normal cursor-pointer hover:text-[#419FD9] transition-colors">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="text-[18px] xl:text-[16px] font-medium xl:font-normal cursor-pointer hover:text-[#419FD9] transition-colors">Contact</a>
+                        </li>
+                    </ul>
 
-                <div class="flex items-center gap-4">
-                    <a href="mailto:sales@emsoftmn.com" class="text-[16px] font-medium! text-black cursor-pointer">
-                        sales@emsoftmn.com.com
-                    </a>
+                    <div class="flex flex-col items-center gap-4 xl:flex-row xl:gap-4">
+                        <a href="mailto:sales@emsoftmn.com"
+                            class="text-[16px] font-medium! text-black cursor-pointer hover:text-[#419FD9] transition-colors">
+                            sales@emsoftmn.com
+                        </a>
 
-                    <a href="#"
-                        class="text-[16px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-3 min-w-[210px] text-center rounded-[8px]">
-                        Get a Consultation
-                    </a>
+                        <a href="#"
+                            class="text-[16px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-3 min-w-[210px] text-center rounded-lg hover:bg-[#358cc5] transition-colors">
+                            Get a Consultation
+                        </a>
+                    </div>
                 </div>
+
+                <button type="button" id="mobile-menu-btn" onclick="toggleMobileMenu()"
+                    class="cursor-pointer block w-10 h-10 xl:hidden z-50 relative">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="4" fill="white" />
+                        <path d="M11 13H33" stroke="#419FD9" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M17 20L33 20" stroke="#419FD9" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M11 27H33" stroke="#419FD9" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -145,13 +170,13 @@
     <!-- Footer -->
     <Footer class="block py-5 bg-[#0D202B] mt-auto">
         <div class="auto_container">
-            <div class="inner grid grid-cols-4 gap-5">
+            <div class="inner grid lg:grid-cols-4 gap-5">
                 <div class="block">
-                    <a href="index.html" class="block text-[40px] font-extrabold uppercase text-white">
+                    <a href="index.html" class="block text-[28px] md:text-[40px] font-extrabold uppercase text-white">
                         Em<span class="text-[#419FD9]">soft</span>
                     </a>
 
-                    <p class="text-sm font-normal mt-5 max-w-52.5 text-white">
+                    <p class="text-sm font-normal mt-5 lg:max-w-52.5 text-white">
                         Transforming Ideas into Digital Realities with Expert Web Development
                     </p>
                 </div>
@@ -196,18 +221,18 @@
                     </a>
 
                     <a href="#"
-                        class="text-[16px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-3 min-w-[210px] text-center rounded-lg">
+                        class="text-[16px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-3 min-w-[210px] text-center rounded-lg w-fit">
                         Get a Consultation
                     </a>
                 </div>
 
                 <div
-                    class="flex items-center col-span-4 justify-between border-solid border-0 border-t-[0.4px] border-t-[#FAFAFA] pt-5 mt-16.5">
+                    class="flex lg:items-center justify-between flex-col lg:flex-row gap-3 lg:col-span-4 border-solid border-0 border-t-[0.4px] border-t-[#FAFAFA] pt-5 mt-10 md:mt-16.5">
                     <h6 class="text-sm text-[#A7A7A7] leading-tight">
                         Copyright © 2020-2026 EMSOFT
                     </h6>
 
-                    <ul class="flex items-center gap-5.5">
+                    <ul class="flex lg:items-center flex-col lg:flex-row gap-3 md:gap-5.5">
                         <li>
                             <a href="#" class="text-sm text-[#A7A7A7] leading-tight">
                                 Consent to the Processing of Personal Data
@@ -229,6 +254,11 @@
         </div>
     </Footer>
     <!-- End Footer -->
+
+
+
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

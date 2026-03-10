@@ -1,91 +1,68 @@
+// Header Scroll Effect
+const header = document.getElementById("main-header");
 
-// var ==========================
-let btn = document.querySelector('.btn');
-let video = document.querySelector('.video');
-let vid = document.getElementById("about_video");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    header.classList.remove("py-5");
+    header.classList.add("py-3", "shadow-md", "bg-white");
+    header.classList.remove("bg-white/80", "backdrop-blur-md");
+  } else {
+    header.classList.add("py-5");
+    header.classList.remove("py-3", "shadow-md", "bg-white");
+    header.classList.add("bg-white/80", "backdrop-blur-md");
+  }
+});
 
-let lang_drop = document.querySelector(".lang_drop");
-let lang_current = document.querySelector(".lang_current");
+// Mobile Menu Toggle
+window.toggleMobileMenu = function () {
+  const mobileMenu = document.getElementById("nav-wrapper");
+  if (!mobileMenu) return;
 
-let burger = document.querySelector(".burger");
-let nav_bg = document.querySelector(".nav_bg");
+  // Check if menu is hidden (using tailwind utility classes)
+  // We check if it HAS the invisible class. If yes, it's hidden.
+  const isHidden =
+    mobileMenu.classList.contains("invisible") ||
+    mobileMenu.classList.contains("opacity-0");
 
-let service_nav_link = document.querySelector(".service_nav-link");
-let service_nav = document.querySelector(".service_nav");
-
-
-function sleep(time) {
-    return new Promise((resolve) => setTimeout(resolve, time));
-}
-
-
-window.onscroll = function () {
-    scrollPosition = Math.round(window.scrollY);
-
-    if (scrollPosition > 100) {
-        document.querySelector('.header').classList.add('stick');
-    } else {
-        document.querySelector('.header').classList.remove('stick');
-    }
+  if (isHidden) {
+    // Open Menu
+    mobileMenu.classList.remove("opacity-0", "invisible", "-translate-y-4");
+    mobileMenu.classList.add("opacity-100", "visible", "translate-y-0");
+  } else {
+    // Close Menu
+    mobileMenu.classList.remove("opacity-100", "visible", "translate-y-0");
+    mobileMenu.classList.add("opacity-0", "invisible", "-translate-y-4");
+  }
 };
 
-window.onclick = function (e) {
+// Close menu when clicking outside
+window.addEventListener("click", function (e) {
+  const mobileMenu = document.getElementById("nav-wrapper");
 
-    // drop_lang.forEach(drop_lang => {
-    //     if (drop_lang != undefined) {
-    //         drop_lang.classList.contains('active') && !e.target.closest('.nav_inner');
-    //         drop_lang.classList.remove('active')
-    //     }
-    // }
-    // );
+  // Only if menu exists, is open (visible), and click is NOT inside menu and NOT on button
+  if (
+    mobileMenu &&
+    !mobileMenu.classList.contains("invisible") &&
+    !e.target.closest("#nav-wrapper") &&
+    !e.target.closest("#mobile-menu-btn")
+  ) {
+    // Close it
+    mobileMenu.classList.remove("opacity-100", "visible", "translate-y-0");
+    mobileMenu.classList.add("opacity-0", "invisible", "-translate-y-4");
+  }
+});
 
-    // if (drop_lang.classList.contains('active') && !e.target.closest('.lang_box')) {
-    //     drop_lang.classList.remove('active')
-    // }
-
-    if (nav_bg.classList.contains('active') && !e.target.closest('.burger') && !e.target.closest('.lang_current') && !e.target.closest('.service_nav-link')) {
-        nav_bg.classList.remove('active')
+// Close menu when clicking a link (mobile only)
+const mobileLinks = document.querySelectorAll("#nav-wrapper a");
+mobileLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    // Simple check: if window width is less than XL breakpoint (1280px)
+    if (window.innerWidth < 1280) {
+      const mobileMenu = document.getElementById("nav-wrapper");
+      if (mobileMenu) {
+        mobileMenu.classList.remove("opacity-100", "visible", "translate-y-0");
+        mobileMenu.classList.add("opacity-0", "invisible", "-translate-y-4");
+      }
     }
-
-    if (burger.classList.contains('active') && !e.target.closest('.burger') && !e.target.closest('.lang_current') && !e.target.closest('.service_nav-link')) {
-        burger.classList.remove('active')
-    }
-
-    if (lang_drop.classList.contains('active') && !e.target.closest('.lang_current')) {
-        lang_drop.classList.remove('active')
-    }
-
-    if (service_nav.classList.contains('active') && !e.target.closest('.service_nav-link')) {
-        service_nav.classList.remove('active')
-    }
-
-}
-
-
-// Clicks ======================================================
-
-if (lang_current != undefined) {
-    lang_current.addEventListener('click', function () {
-        sleep(2).then(() => {
-            lang_drop.classList.toggle('active');
-        });
-    });
-}
-
-
-if (burger != undefined) {
-    burger.addEventListener('click', function () {
-        sleep(2).then(() => {
-            nav_bg.classList.toggle('active');
-            burger.classList.toggle('active');
-        });
-    });
-}
-
-if (service_nav_link != undefined) {
-    service_nav_link.addEventListener('click', function () {
-        sleep(2).then(() => {
-            service_nav.classList.toggle('active');
-        });
-    });
-}
+  });
+});
