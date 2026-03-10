@@ -902,6 +902,18 @@
   .pt-25 {
     padding-top: calc(var(--spacing) * 25);
   }
+  .pt-27 {
+    padding-top: calc(var(--spacing) * 27);
+  }
+  .pt-30 {
+    padding-top: calc(var(--spacing) * 30);
+  }
+  .pt-35 {
+    padding-top: calc(var(--spacing) * 35);
+  }
+  .pt-40 {
+    padding-top: calc(var(--spacing) * 40);
+  }
   .pt-47 {
     padding-top: calc(var(--spacing) * 47);
   }
@@ -1622,6 +1634,11 @@
   .xl\:gap-10 {
     @media (width >= 80rem) {
       gap: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:pt-40 {
+    @media (width >= 80rem) {
+      padding-top: calc(var(--spacing) * 40);
     }
   }
   .xl\:text-\[16px\] {
