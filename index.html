@@ -148,7 +148,7 @@
                     </a>
 
                     <a href="#proposal"
-                        class="text-[16px] md:text-[18px] font-semibold leading-tight py-5 px-8 border border-solid border-[#419FD9] rounded-lg text-center">
+                        class="text-[16px] md:text-[18px] font-semibold leading-tight py-5 px-8 border border-solid border-[#419FD9] bg-[#fafafa] rounded-lg text-center">
                         Request a Proposal
                     </a>
                 </div>
@@ -1297,14 +1297,13 @@
                     </p>
                 </div>
 
-                <div class="flex flex-col lg:flex-row mt-10 gap-10">
-                    <div class="block w-full lg:max-w-[550px] h-[400px] lg:h-[770px] bg-[#f5f5f5] rounded-2xl">
-                        <img class="w-full h-full object-contain rounded-2xl overflow-hidden" src="assets/images/profile.jpg" alt="reslut-photo">
+                <div class="flex flex-wrap lg:flex-nowrap mt-10 gap-10">
+                    <div class="block mx-auto">
+                        <img class="w-full sm:w-auto lg:max-w-[550px] sm:h-[330px] h-[500px] lg:h-[650px] object-contain rounded-2xl overflow-hidden" src="assets/images/profile.jpg" alt="reslut-photo">
                     </div>
 
                     <div class="flex flex-col-reverse lg:flex-col">
-
-                        <div class="block bg-[#419FD9] rounded-xl p-5 mt-5 lg:mb-[18px]">
+                        <div class="block bg-[#419FD9] rounded-xl p-5 mt-5 lg:mt-0 lg:mb-[18px]">
                             <h6 class="text-xl md:text-[30px] text-white leading-tight font-medium mb-2">
                                 Mission
                             </h6>
@@ -1883,14 +1882,49 @@
                     </div>
 
                     <form action="#" class="flex flex-col gap-4.5">
+                        <div class="relative block w-full custom-dropdown" data-dropdown>
+                            <input type="hidden" name="lead_source" value="">
+
+                            <button type="button"
+                                class="flex w-full items-center justify-between border-solid border-1.5 border-[#419FD9] rounded-md p-4 md:p-5 text-left text-[12px] md:text-sm font-normal leading-tight text-[#5D5D5D] bg-white cursor-pointer transition-all duration-300 focus:outline-none focus:border-[#275F82]"
+                                data-dropdown-trigger aria-expanded="false">
+                                <span data-dropdown-label>How did you hear about us?</span>
+                                <span class="ml-4 shrink-0 text-[#419FD9] transition-transform duration-300" data-dropdown-arrow>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="currentColor" stroke-width="1.8"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="pointer-events-none absolute left-0 right-0 top-[calc(100%+1px)] z-30 max-h-0 overflow-hidden rounded-md border border-[#C6E2F4] bg-white opacity-0 shadow-[0_12px_30px_rgba(6,16,22,0.12)] transition-all duration-300"
+                                data-dropdown-menu>
+                                <div class="p-2">
+                                    <div class="rounded-md px-4 py-3 text-[12px] md:text-sm text-[#5D5D5D] transition-all duration-200 hover:bg-[#ECF5FB] hover:text-[#061016] cursor-pointer"
+                                        data-dropdown-option data-value="google-search">Google Search</div>
+                                    <div class="rounded-md px-4 py-3 text-[12px] md:text-sm text-[#5D5D5D] transition-all duration-200 hover:bg-[#ECF5FB] hover:text-[#061016] cursor-pointer"
+                                        data-dropdown-option data-value="social-media">Social Media</div>
+                                    <div class="rounded-md px-4 py-3 text-[12px] md:text-sm text-[#5D5D5D] transition-all duration-200 hover:bg-[#ECF5FB] hover:text-[#061016] cursor-pointer"
+                                        data-dropdown-option data-value="referral">Referral</div>
+                                    <div class="rounded-md px-4 py-3 text-[12px] md:text-sm text-[#5D5D5D] transition-all duration-200 hover:bg-[#ECF5FB] hover:text-[#061016] cursor-pointer"
+                                        data-dropdown-option data-value="clutch-upwork">Clutch / Upwork</div>
+                                    <div class="rounded-md px-4 py-3 text-[12px] md:text-sm text-[#5D5D5D] transition-all duration-200 hover:bg-[#ECF5FB] hover:text-[#061016] cursor-pointer"
+                                        data-dropdown-option data-value="advertisement">Advertisement</div>
+                                    <div class="rounded-md px-4 py-3 text-[12px] md:text-sm text-[#5D5D5D] transition-all duration-200 hover:bg-[#ECF5FB] hover:text-[#061016] cursor-pointer"
+                                        data-dropdown-option data-value="other">Other</div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="block w-full">
                             <input type="text" placeholder="Your Name"
-                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md py-5 md:py-5.5 px-5 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight">
+                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md p-4 md:p-5 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight">
                         </div>
 
                         <div class="block w-full">
                             <input type="text" placeholder="Your Email"
-                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md py-5 md:py-5.5 px-5 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight">
+                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md p-4 md:p-5 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight">
                         </div>
 
                         <div class="block w-full relative">
@@ -1923,12 +1957,12 @@
                                 </p>
                             </div>
                             <input type="number" placeholder="(000) 00000"
-                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md py-5 md:py-5.5 px-5 pl-18 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight">
+                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md p-4 md:p-5 pl-18 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight">
                         </div>
 
                         <div class="block w-full">
                             <textarea name="message" id="message" placeholder="Your Message"
-                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md py-5 md:py-5.5 px-5 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight min-h-40 max-h-60"></textarea>
+                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md p-4 md:p-5 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight min-h-40 max-h-60"></textarea>
                         </div>
 
                         <button type="submit"
@@ -2199,6 +2233,68 @@
 
             counters.forEach(counter => {
                 counterObserver.observe(counter);
+            });
+
+            // Custom Dropdown
+            const dropdowns = document.querySelectorAll('[data-dropdown]');
+
+            function closeDropdown(dropdown) {
+                const trigger = dropdown.querySelector('[data-dropdown-trigger]');
+                const menu = dropdown.querySelector('[data-dropdown-menu]');
+                const arrow = dropdown.querySelector('[data-dropdown-arrow]');
+
+                trigger.setAttribute('aria-expanded', 'false');
+                menu.classList.add('max-h-0', 'opacity-0', 'pointer-events-none');
+                menu.classList.remove('max-h-80', 'opacity-100', 'pointer-events-auto');
+                arrow.classList.remove('rotate-180');
+            }
+
+            function openDropdown(dropdown) {
+                const trigger = dropdown.querySelector('[data-dropdown-trigger]');
+                const menu = dropdown.querySelector('[data-dropdown-menu]');
+                const arrow = dropdown.querySelector('[data-dropdown-arrow]');
+
+                dropdowns.forEach(item => {
+                    if (item !== dropdown) closeDropdown(item);
+                });
+
+                trigger.setAttribute('aria-expanded', 'true');
+                menu.classList.remove('max-h-0', 'opacity-0', 'pointer-events-none');
+                menu.classList.add('max-h-80', 'opacity-100', 'pointer-events-auto');
+                arrow.classList.add('rotate-180');
+            }
+
+            dropdowns.forEach(dropdown => {
+                const trigger = dropdown.querySelector('[data-dropdown-trigger]');
+                const label = dropdown.querySelector('[data-dropdown-label]');
+                const hiddenInput = dropdown.querySelector('input[type="hidden"]');
+                const options = dropdown.querySelectorAll('[data-dropdown-option]');
+
+                trigger.addEventListener('click', function () {
+                    const isOpen = trigger.getAttribute('aria-expanded') === 'true';
+                    if (isOpen) {
+                        closeDropdown(dropdown);
+                    } else {
+                        openDropdown(dropdown);
+                    }
+                });
+
+                options.forEach(option => {
+                    option.addEventListener('click', function () {
+                        label.textContent = option.textContent.trim();
+                        label.classList.add('text-[#061016]');
+                        hiddenInput.value = option.dataset.value || '';
+                        closeDropdown(dropdown);
+                    });
+                });
+            });
+
+            document.addEventListener('click', function (event) {
+                dropdowns.forEach(dropdown => {
+                    if (!dropdown.contains(event.target)) {
+                        closeDropdown(dropdown);
+                    }
+                });
             });
 
             // Floating Chat Logic
