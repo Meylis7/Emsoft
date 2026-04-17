@@ -12,6 +12,25 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <title>Emsoft</title>
+
+
+    <style>
+        .point {
+            position: relative;
+            padding-left: 24px;
+        }
+
+        .point:after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 11px;
+            height: 11px;
+            background: #419FD9;
+            border-radius: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -147,14 +166,14 @@
     <!-- Breadcrumb end  =====-->
 
     <!-- Portfolio detail === -->
-    <section>
+    <section class="block mb-[64px]">
         <div class="auto_container">
             <div class="wrap">
                 <h1 class="text-[52px] text-[#419FD9] leading-tight mb-16">
                     Jaylimstudio
                 </h1>
 
-                <div class="flex items-center justify-between gap-4">
+                <div class="flex items-start justify-between flex-wrap xl:flex-nowrap gap-4">
                     <a href="#" class="flex items-center gap-2 cursor-pointer">
                         <span class="block w-10">
                             <svg class="block w-full h-full" width="39" height="39" viewBox="0 0 39 39" fill="none"
@@ -168,18 +187,145 @@
                         </p>
                     </a>
 
-                    <h4 class="text-2xl text-[#061016]">
+                    <h4 class="text-2xl text-[#061016] leading-tight max-w-[777px] order-2">
                         Creative storytelling is our passion. We don’t just capture moments — we craft meaningful
                         narratives that celebrate your love.
                     </h4>
+
+                    <p class="text-lg font-bold leading-tight">
+                        2025
+                    </p>
+                </div>
+
+                <div class="block w-full h-full max-h-[675px] mt-10 mb-8">
+                    <img class="w-full h-full object-contain" src="assets/images/detail-hero.png" alt="detail-hero-img">
+                </div>
+
+                <div class="flex flex-col-reverse lg:flex-row gap-5 lg:gap-[150px]">
+                    <p class="block lg:max-w-[670px] text-2xl leading-tight">
+                        Thousands of users, body shops, and venders, as well as a great number of parts that are ordered
+                        and
+                        sold – how to unite all of these into a single platform that will be convenient for all the
+                        users to
+                        work with and at different management levels? We have found an appropriate solution to create a
+                        single and simple service that will allow working with these data.
+                    </p>
+
+                    <div class="block relative w-[444px]">
+                        <div class="swiper mini-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/images/detail-slider.png" alt="slider-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/detail-slider.png" alt="slider-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/detail-slider.png" alt="slider-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/detail-slider.png" alt="slider-img">
+                                </div>
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Big 1 image ================== -->
+                <div class="block w-full h-[630px] mt-[55px] mb-[60px]">
+                    <img class="w-full h-full object-contain" src="assets/images/detail_1.png" alt="detail-img">
+                </div>
+
+                <p class="block mb-[65px] text-2xl leading-tight">
+                    We considered several platforms at the stage of negotiating the project’s details. As a result, we
+                    chose Angular as the one that allows creating modern design and building SPAs without extra efforts.
+                    Daily brainstorms with the customer made it possible to effectively work out the development
+                    strategy for the application. We also took into account all the architectural features of the
+                    service connected with the possibility of scaling it in the future. For the Back-end, we used Yii2
+                    as a quality framework with good support and community.
+                </p>
+
+                <div class="block w-full h-[640px]">
+                    <img class="w-full h-full object-contain" src="assets/images/detail_1.png" alt="detail-img">
                 </div>
             </div>
         </div>
     </section>
     <!-- Portfolio detail end -->
 
+    <!-- Key features ======= -->
+    <section class="block mb-[100px]">
+        <div class="auto_container">
+            <div class="wrap">
+                <h1 class="text-3xl font-semibold leading-tight mb-[50px] text-center">
+                    KEY FEATURES
+                </h1>
+
+                <ul class="grid grid-cols-2 gap-5">
+                    <li class="block relative p-6 border-solid border-[1px] border-[#DFDFDF] rounded-[10px]">
+                        <p class="point text-2xl text-[##061016] leading-tight">
+                            Unlimited number of body shops and venders
+                        </p>
+                    </li>
+                    <li class="block relative p-6 border-solid border-[1px] border-[#DFDFDF] rounded-[10px]">
+                        <p class="point text-2xl text-[##061016] leading-tight">
+                            Possibility to issue invoices, purchase orders, etc.
+                        </p>
+                    </li>
+                    <li class="block relative p-6 border-solid border-[1px] border-[#DFDFDF] rounded-[10px]">
+                        <p class="point text-2xl text-[##061016] leading-tight">
+                            Flexible means to control the access to the application: create user roles to manage the
+                            inventory, give user permissions and limit them, etc.
+                        </p>
+                    </li>
+                    <li class="block relative p-6 border-solid border-[1px] border-[#DFDFDF] rounded-[10px]">
+                        <p class="point text-2xl text-[##061016] leading-tight">
+                            Drawing up reports, inventory schedules and much more
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Key features end === -->
+
+    <!-- Technologies ======= -->
+    <section class="block mb-[30px]">
+        <div class="auto_container">
+            <div class="wrap">
+                <h1 class="text-3xl font-semibold leading-tight mb-[50px] text-center">
+                    Technologies
+                </h1>
+
+                <div class="flex items-center justify-center flex-wrap gap-2.5">
+                    <h6
+                        class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                        YII2
+                    </h6>
+                    <h6
+                        class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                        HTML / CSS
+                    </h6>
+                    <h6
+                        class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                        ANGULAR
+                    </h6>
+                    <h6
+                        class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                        JS
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Technologies end === -->
+
     <!-- Contact ==========----->
-    <section id="proposal" class="pt-17 py-7.5 md:py-15 pb-15 md:pb-30" id="contact">
+    <section id="proposal" class="pt-17 py-7.5 md:py-15 pb-15" id="contact">
         <div class="auto_container">
             <div class="inner">
                 <div class="block max-w-[1060px]">
@@ -328,6 +474,131 @@
     </section>
     <!-- Contact end ==========-->
 
+    <!-- Other Works ==========-->
+    <section class="relative pb-15 md:pb-40">
+        <div class="auto_container">
+            <div class="wrap">
+                <h1 class="text-[52px] text-[#419FD9] leading-tight mb-5">
+                    Other works
+                </h1>
+
+                <div class="block relative lg:h-[360px] w-full mb-[30px]">
+                    <img class="w-full h-full object-contain" src="assets/images/other_works.png" alt="other_works">
+
+                    <div class="block absolute top-10 left-9 w-full max-w-[600px]">
+                        <h4 class="text-[30px] leading-tight text-white font-semibold mb-4">
+                            INVENTORY WEB APPLICATION
+                        </h4>
+
+                        <p class="text-lg text-white leading-tight">
+                            Inventory Web Application is a platform created for simultaneous work of body shops and
+                            parts venders. The service allows managing sales at ease: manage the spare parts, order them
+                            from venders, draw up documentation, and much more. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
+                    <div class="block">
+                        <a href="#" class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight uppercase ">
+                            jaylimstudio
+                        </a>
+                        <p class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight  overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
+                            Creative storytelling is our passion. We don’t just capture moments — we craft meaningful
+                            narratives that celebrate your love. Our team of photographers, filmmakers, designers, and
+                            editors are real people inspired by real connections. Your unique story, filled with raw and
+                            honest emotions, fuels our creativity. We approach every wedding with excitement and
+                            sincerity, crafting an elegant visual narrative that reflects your love and joy.
+                        </p>
+
+                        <div class="flex items-center flex-wrap gap-2.5">
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                YII2
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                HTML / CSS
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                ANGULAR
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                JS
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <a href="#" class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight uppercase">
+                            The World's Fastest Funnel Builder
+                        </a>
+                        <p class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight  overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
+                            Need more leads? Want more sales? Optins.com helps make that happen.
+                            As you probably already know... giving away helpful freebies (like Google docs, PDF's,
+                            ebooks, Zoom replays, etc.) is one of the best ways to warm up leads and make sales but...
+                            Why does it take 45 minutes to set up a simple funnel?!
+                        </p>
+
+                        <div class="flex items-center flex-wrap gap-2.5">
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                YII2
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                HTML / CSS
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                ANGULAR
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                JS
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <a href="#" class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight uppercase">
+                            Museum Quality Prints
+                        </a>
+                        <p class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight  overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
+                            Museum Quality Prints from Local Artists!
+                            Need an oversize print or a large quantity? Call for a quote! When you order canvas prints
+                            online through our gallery, you are getting the best quality print available with today's
+                            technology. We use large format inkjet printers with archival inks and sustainable, high
+                            quality medias that will last.
+                        </p>
+
+                        <div class="flex items-center flex-wrap gap-2.5">
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                YII2
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                HTML / CSS
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                ANGULAR
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                JS
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Other Works end ======-->
+
     <!-- Footer ===============-->
     <Footer class="block py-5 bg-[#0D202B] mt-auto">
         <div class="auto_container">
@@ -447,6 +718,40 @@
 
 
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var detailMiniSlider = document.querySelector(".mini-swiper");
+            if (detailMiniSlider) {
+                new Swiper(detailMiniSlider, {
+                    slidesPerView: 1,
+                    loop: true,
+                    spaceBetween: 10,
+                    spaceBetween: 20,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    breakpoints: {
+                        768: {
+                            spaceBetween: 24
+                        },
+                        1024: {
+                            spaceBetween: 24
+                        }
+                    },
+                    navigation: {
+                        nextEl: ".trusted-next",
+                        prevEl: ".trusted-prev"
+                    }
+                });
+            }
+
+
+        });
+    </script>
 
 </body>
 
