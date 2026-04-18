@@ -30,6 +30,49 @@
             background: #419FD9;
             border-radius: 100%;
         }
+
+        .swiper-button-next {
+            right: -45px;
+        }
+
+        .swiper-button-prev {
+            left: -45px;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            color: white;
+            font-size: 17px;
+            background: #419FD9;
+            min-width: 46px;
+            min-height: 46px;
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 17px;
+            border-radius: 100%;
+        }
+
+        @media (max-width: 768px) {
+
+            .swiper-button-next::after,
+            .swiper-button-prev::after {
+                min-width: 36px;
+                min-height: 36px;
+                width: 36px;
+                height: 36px;
+                font-size: 14px;
+            }
+
+            .point:after {
+                top: 5px;
+                width: 9px;
+                height: 9px;
+            }
+
+        }
     </style>
 </head>
 
@@ -133,8 +176,8 @@
     </header>
     <!-- End Header ==========-->
 
-    <!-- Breadcrumb  =====------>
-    <section class="pt-25 md:pt-32">
+    <!-- Breadcrumb  =========-->
+    <section class="pt-25 md:pt-32 mb-10">
         <div class="auto_container">
             <div class="wrap">
                 <div class="flex items-center gap-1.5">
@@ -157,7 +200,7 @@
                         </svg>
                     </span>
                     <h6 class="text-sm md:text-[16px] font-normal leading-tight">
-                        jaylimstudio
+                        STARGATE
                     </h6>
                 </div>
             </div>
@@ -169,8 +212,8 @@
     <section class="block mb-[64px]">
         <div class="auto_container">
             <div class="wrap">
-                <h1 class="text-[52px] text-[#419FD9] leading-tight mb-16">
-                    Jaylimstudio
+                <h1 class="text-[28px] md:text-[46px] xl:text-[52px] text-[#419FD9] leading-tight mb-7 md:mb-16">
+                    STARGATE
                 </h1>
 
                 <div class="flex items-start justify-between flex-wrap xl:flex-nowrap gap-4">
@@ -183,26 +226,27 @@
                         </span>
 
                         <p class="text-lg text-[#061016] leading-tight">
-                            www.jaylimstudio.com
+                            —
                         </p>
                     </a>
 
-                    <h4 class="text-2xl text-[#061016] leading-tight max-w-[777px] order-2">
-                        Creative storytelling is our passion. We don’t just capture moments — we craft meaningful
-                        narratives that celebrate your love.
+                    <h4 class="text-lg md:text-2xl text-[#061016] leading-tight w-full xl:max-w-[777px] order-2 xl:order-0">
+                        Stargate is a multifunctional platform that aims at organizing application management on users’
+                        mobile devices.
                     </h4>
 
-                    <p class="text-lg font-bold leading-tight">
+                    <p class="text-sm sm:text-lg font-bold leading-tight">
                         2025
                     </p>
                 </div>
 
-                <div class="block w-full h-full max-h-[675px] mt-10 mb-8">
-                    <img class="w-full h-full object-contain" src="assets/images/detail-hero.png" alt="detail-hero-img">
+                <div class="block w-full h-full max-h-[675px] mt-5 md:mt-10 mb-4 md:mb-8">
+                    <img class="w-full h-full object-contain" src="assets/images/stargate-hero.png"
+                        alt="detail-hero-img">
                 </div>
 
                 <div class="flex flex-col-reverse lg:flex-row gap-5 lg:gap-[150px]">
-                    <p class="block lg:max-w-[670px] text-2xl leading-tight">
+                    <p class="block lg:max-w-[670px] text-lg md:text-2xl leading-tight">
                         Thousands of users, body shops, and venders, as well as a great number of parts that are ordered
                         and
                         sold – how to unite all of these into a single platform that will be convenient for all the
@@ -211,46 +255,57 @@
                         single and simple service that will allow working with these data.
                     </p>
 
-                    <div class="block relative w-[444px]">
-                        <div class="swiper mini-swiper">
+                    <div class="block relative md:-mt-20 mx-auto xl:mx-0 w-full md:w-[444px] ">
+                        <div class="swiper mini-swiper h-full sm:h-[300px]">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="assets/images/detail-slider.png" alt="slider-img">
+                                    <img class="w-full h-full object-contain mx-auto"
+                                        src="assets/images/stargate-slider.png" alt="slider-img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="assets/images/detail-slider.png" alt="slider-img">
+                                    <img class="w-full h-full object-contain mx-auto"
+                                        src="assets/images/stargate-slider.png" alt="slider-img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="assets/images/detail-slider.png" alt="slider-img">
+                                    <img class="w-full h-full object-contain mx-auto"
+                                        src="assets/images/stargate-slider.png" alt="slider-img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="assets/images/detail-slider.png" alt="slider-img">
+                                    <img class="w-full h-full object-contain mx-auto"
+                                        src="assets/images/stargate-slider.png" alt="slider-img">
                                 </div>
                             </div>
-
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
                         </div>
+
+                        <div class="swiper-button-next !hidden md:!block"></div>
+                        <div class="swiper-button-prev !hidden md:!block"></div>
                     </div>
                 </div>
 
 
                 <!-- Big 1 image ================== -->
-                <div class="block w-full h-[630px] mt-[55px] mb-[60px]">
-                    <img class="w-full h-full object-contain" src="assets/images/detail_1.png" alt="detail-img">
+                <div class="block w-full h-fit md:h-[630px] mt-7 md:mt-[55px] mb-7 md:mb-[60px]">
+                    <img class="w-full h-full object-contain" src="assets/images/stargate-detail-1.png"
+                        alt="detail-img">
                 </div>
+                <div class="flex flex-col md:flex-row items-center gap-10 mt-5 mb-7 md:my-[65px]">
+                    <div class="flex sm:h-[440px] md:h-[630px] md:w-1/2">
+                        <img class="w-full object-contain" src="assets/images/stargate-detail-2.png"
+                            alt="detail-img">
+                    </div>
 
-                <p class="block mb-[65px] text-2xl leading-tight">
-                    We considered several platforms at the stage of negotiating the project’s details. As a result, we
-                    chose Angular as the one that allows creating modern design and building SPAs without extra efforts.
-                    Daily brainstorms with the customer made it possible to effectively work out the development
-                    strategy for the application. We also took into account all the architectural features of the
-                    service connected with the possibility of scaling it in the future. For the Back-end, we used Yii2
-                    as a quality framework with good support and community.
-                </p>
+                    <div class="block md:w-1/2">
+                        <div class="block mb-5 sm:h-[440px] w-full">
+                            <img class="w-full object-contain" src="assets/images/stargate-detail-3.png" alt="">
+                        </div>
 
-                <div class="block w-full h-[640px]">
-                    <img class="w-full h-full object-contain" src="assets/images/detail_1.png" alt="detail-img">
+                        <p class="block text-lg md:text-2xl leading-tight mb-5">
+                            The platform also registers applications from the AppStore in the Stargate service to
+                            organize the delivery process of these applications to users’ mobile devices. The project
+                            has a large community, the members of which should have a possibility to subscribe to group
+                            text messages in order to receive timely updates and keep up with the latest news.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -258,32 +313,32 @@
     <!-- Portfolio detail end -->
 
     <!-- Key features ======= -->
-    <section class="block mb-[100px]">
+    <section class="block mb-[50px] md:mb-[100px]">
         <div class="auto_container">
             <div class="wrap">
-                <h1 class="text-3xl font-semibold leading-tight mb-[50px] text-center">
+                <h1 class="text-xl md:text-3xl font-semibold leading-tight mb-7 md:mb-[50px] text-center">
                     KEY FEATURES
                 </h1>
 
-                <ul class="grid grid-cols-2 gap-5">
-                    <li class="block relative p-6 border-solid border-[1px] border-[#DFDFDF] rounded-[10px]">
-                        <p class="point text-2xl text-[##061016] leading-tight">
+                <ul class="grid md:grid-cols-2 gap-5">
+                    <li class="block relative p-4 md:p-6 border-solid border-[1px] border-[#DFDFDF] rounded-[10px]">
+                        <p class="point text-sm sm:text-lg md:text-2xl text-[##061016] leading-tight">
                             Unlimited number of body shops and venders
                         </p>
                     </li>
-                    <li class="block relative p-6 border-solid border-[1px] border-[#DFDFDF] rounded-[10px]">
-                        <p class="point text-2xl text-[##061016] leading-tight">
+                    <li class="block relative p-4 md:p-6 border-solid border-[1px] border-[#DFDFDF] rounded-[10px]">
+                        <p class="point text-sm sm:text-lg md:text-2xl text-[##061016] leading-tight">
                             Possibility to issue invoices, purchase orders, etc.
                         </p>
                     </li>
-                    <li class="block relative p-6 border-solid border-[1px] border-[#DFDFDF] rounded-[10px]">
-                        <p class="point text-2xl text-[##061016] leading-tight">
+                    <li class="block relative p-4 md:p-6 border-solid border-[1px] border-[#DFDFDF] rounded-[10px]">
+                        <p class="point text-sm sm:text-lg md:text-2xl text-[##061016] leading-tight">
                             Flexible means to control the access to the application: create user roles to manage the
                             inventory, give user permissions and limit them, etc.
                         </p>
                     </li>
-                    <li class="block relative p-6 border-solid border-[1px] border-[#DFDFDF] rounded-[10px]">
-                        <p class="point text-2xl text-[##061016] leading-tight">
+                    <li class="block relative p-4 md:p-6 border-solid border-[1px] border-[#DFDFDF] rounded-[10px]">
+                        <p class="point text-sm sm:text-lg md:text-2xl text-[##061016] leading-tight">
                             Drawing up reports, inventory schedules and much more
                         </p>
                     </li>
@@ -297,7 +352,7 @@
     <section class="block mb-[30px]">
         <div class="auto_container">
             <div class="wrap">
-                <h1 class="text-3xl font-semibold leading-tight mb-[50px] text-center">
+                <h1 class="text-xl md:text-3xl font-semibold leading-tight mb-[50px] text-center">
                     Technologies
                 </h1>
 
@@ -325,7 +380,7 @@
     <!-- Technologies end === -->
 
     <!-- Contact ==========----->
-    <section id="proposal" class="pt-17 py-7.5 md:py-15 pb-15" id="contact">
+    <section id="proposal" class="md:pt-17 py-7.5 md:py-15 pb-15" id="contact">
         <div class="auto_container">
             <div class="inner">
                 <div class="block max-w-[1060px]">
@@ -333,7 +388,7 @@
                         <span class="text-[#419FD9]"> Ready to discuss</span>
                         your project?
                     </h1>
-                    <p class="text-[16px] md:text-2xl text-[#061016] leading-tight">
+                    <p class="text-[16px] md:text-lg md:text-2xl text-[#061016] leading-tight">
                         We don’t sell «development for the sake of development.» We build systems that automate
                         processes, reduce costs, scale with your business, and deliver measurable results
                     </p>
@@ -341,7 +396,7 @@
 
                 <div class="grid md:grid-cols-2 gap-5 mt-6 md:mt-15">
                     <div class="block">
-                        <h6 class="font-semibold text-xl md:text-2xl mb-4.5">
+                        <h6 class="font-semibold text-xl md:text-lg md:text-2xl mb-4.5">
                             What you’ll receive after contacting us:
                         </h6>
 
@@ -478,19 +533,18 @@
     <section class="relative pb-15 md:pb-40">
         <div class="auto_container">
             <div class="wrap">
-                <h1 class="text-[52px] text-[#419FD9] leading-tight mb-5">
+                <h1 class="text-[28px] md:text-[46px] xl:text-[52px] text-[#419FD9] leading-tight mb-5">
                     Other works
                 </h1>
 
-                <div class="block relative lg:h-[360px] w-full mb-[30px]">
-                    <img class="w-full h-full object-contain" src="assets/images/other_works.png" alt="other_works">
-
-                    <div class="block absolute top-10 left-9 w-full max-w-[600px]">
-                        <h4 class="text-[30px] leading-tight text-white font-semibold mb-4">
+                <div
+                    class="block relative sm:h-[260px] md:h-[320px] lg:h-[360px] w-full mb-[30px] bg-[url('assets/images/other_works.png')] bg-cover bg-center bg-no-repeat rounded-lg">
+                    <div class="block w-full md:max-w-[600px] py-10 px-9">
+                        <h4 class="text-xl md:text-[30px] leading-tight text-white font-semibold mb-4">
                             INVENTORY WEB APPLICATION
                         </h4>
 
-                        <p class="text-lg text-white leading-tight">
+                        <p class="text-sm md:text-lg text-white leading-tight">
                             Inventory Web Application is a platform created for simultaneous work of body shops and
                             parts venders. The service allows managing sales at ease: manage the spare parts, order them
                             from venders, draw up documentation, and much more. 
@@ -500,10 +554,12 @@
 
                 <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
                     <div class="block">
-                        <a href="#" class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight uppercase ">
+                        <a href="#"
+                            class="mt-5 mb-3 text-[#061016] text-xl md:text-xl md:text-3xl font-semibold leading-tight uppercase ">
                             jaylimstudio
                         </a>
-                        <p class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight  overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
+                        <p
+                            class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight  overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
                             Creative storytelling is our passion. We don’t just capture moments — we craft meaningful
                             narratives that celebrate your love. Our team of photographers, filmmakers, designers, and
                             editors are real people inspired by real connections. Your unique story, filled with raw and
@@ -532,10 +588,12 @@
                     </div>
 
                     <div class="block">
-                        <a href="#" class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight uppercase">
+                        <a href="#"
+                            class="mt-5 mb-3 text-[#061016] text-xl md:text-xl md:text-3xl font-semibold leading-tight uppercase">
                             The World's Fastest Funnel Builder
                         </a>
-                        <p class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight  overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
+                        <p
+                            class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight  overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
                             Need more leads? Want more sales? Optins.com helps make that happen.
                             As you probably already know... giving away helpful freebies (like Google docs, PDF's,
                             ebooks, Zoom replays, etc.) is one of the best ways to warm up leads and make sales but...
@@ -563,10 +621,12 @@
                     </div>
 
                     <div class="block">
-                        <a href="#" class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight uppercase">
+                        <a href="#"
+                            class="mt-5 mb-3 text-[#061016] text-xl md:text-xl md:text-3xl font-semibold leading-tight uppercase">
                             Museum Quality Prints
                         </a>
-                        <p class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight  overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
+                        <p
+                            class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight  overflow-hidden [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]">
                             Museum Quality Prints from Local Artists!
                             Need an oversize print or a large quantity? Call for a quote! When you order canvas prints
                             online through our gallery, you are getting the best quality print available with today's
@@ -725,14 +785,21 @@
         document.addEventListener("DOMContentLoaded", function () {
             var detailMiniSlider = document.querySelector(".mini-swiper");
             if (detailMiniSlider) {
+                var detailMiniWrapper = detailMiniSlider.parentElement;
+                var detailMiniNext = detailMiniWrapper.querySelector(".swiper-button-next");
+                var detailMiniPrev = detailMiniWrapper.querySelector(".swiper-button-prev");
+
                 new Swiper(detailMiniSlider, {
                     slidesPerView: 1,
                     loop: true,
-                    spaceBetween: 10,
                     spaceBetween: 20,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
                     navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
+                        nextEl: detailMiniNext,
+                        prevEl: detailMiniPrev,
                     },
                     breakpoints: {
                         768: {
@@ -741,10 +808,6 @@
                         1024: {
                             spaceBetween: 24
                         }
-                    },
-                    navigation: {
-                        nextEl: ".trusted-next",
-                        prevEl: ".trusted-prev"
                     }
                 });
             }
