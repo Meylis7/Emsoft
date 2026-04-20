@@ -246,23 +246,14 @@
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
-  .top-\[0px\] {
-    top: 0px;
-  }
   .top-\[10px\]\! {
     top: 10px !important;
-  }
-  .top-\[20px\] {
-    top: 20px;
   }
   .top-\[50\%\] {
     top: 50%;
   }
   .top-\[60px\] {
     top: 60px;
-  }
-  .top-\[100px\] {
-    top: 100px;
   }
   .top-\[calc\(100\%\+1px\)\] {
     top: calc(100% + 1px);
@@ -389,6 +380,9 @@
   }
   .mt-15 {
     margin-top: calc(var(--spacing) * 15);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
   }
   .mt-\[18px\] {
     margin-top: 18px;
@@ -689,6 +683,12 @@
   }
   .max-w-\[1060px\] {
     max-width: 1060px;
+  }
+  .max-w-\[1170px\] {
+    max-width: 1170px;
+  }
+  .max-w-\[1173px\] {
+    max-width: 1173px;
   }
   .max-w-full {
     max-width: 100%;
@@ -1071,6 +1071,9 @@
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
+  }
+  .fill-black {
+    fill: var(--color-black);
   }
   .stroke-\[\#061016\] {
     stroke: #061016;
@@ -1734,6 +1737,11 @@
       margin-top: calc(var(--spacing) * 16.5);
     }
   }
+  .md\:mt-20 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 20);
+    }
+  }
   .md\:mt-\[55px\] {
     @media (width >= 48rem) {
       margin-top: 55px;
@@ -2333,11 +2341,6 @@
   .xl\:visible {
     @media (width >= 80rem) {
       visibility: visible;
-    }
-  }
-  .xl\:top-\[10px\] {
-    @media (width >= 80rem) {
-      top: 10px;
     }
   }
   .xl\:top-\[20px\] {
