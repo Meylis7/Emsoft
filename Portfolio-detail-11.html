@@ -337,10 +337,6 @@
                                 <img class="w-full h-full object-contain" src="assets/images/slider-6.png"
                                     alt="slider-img">
                             </div>
-                            <div class="swiper-slide">
-                                <img class="w-full h-full object-contain" src="assets/images/slider-4.png"
-                                    alt="slider-img">
-                            </div>
                         </div>
                     </div>
 
@@ -883,8 +879,9 @@
 
                 new Swiper(detailBigSlider, {
                     slidesPerView: 3,
-                    loop: true,
+                    // loop: true,
                     centeredSlides: true,
+                    initialSlide: 1,
                     spaceBetween: 1,
                     speed: 600,
                     autoplay: {

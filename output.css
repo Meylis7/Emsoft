@@ -246,14 +246,23 @@
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
+  .top-\[0px\] {
+    top: 0px;
+  }
   .top-\[10px\]\! {
     top: 10px !important;
+  }
+  .top-\[20px\] {
+    top: 20px;
   }
   .top-\[50\%\] {
     top: 50%;
   }
   .top-\[60px\] {
     top: 60px;
+  }
+  .top-\[100px\] {
+    top: 100px;
   }
   .top-\[calc\(100\%\+1px\)\] {
     top: calc(100% + 1px);
@@ -350,9 +359,6 @@
   }
   .my-\[15px\] {
     margin-block: 15px;
-  }
-  .\!mt-4 {
-    margin-top: calc(var(--spacing) * 4) !important;
   }
   .\!mt-10 {
     margin-top: calc(var(--spacing) * 10) !important;
@@ -2166,21 +2172,6 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
-  .lg\:mt-35 {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 35);
-    }
-  }
-  .lg\:mt-75 {
-    @media (width >= 64rem) {
-      margin-top: calc(var(--spacing) * 75);
-    }
-  }
-  .lg\:mt-\[200px\] {
-    @media (width >= 64rem) {
-      margin-top: 200px;
-    }
-  }
   .lg\:mb-0 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 0);
@@ -2342,6 +2333,11 @@
   .xl\:visible {
     @media (width >= 80rem) {
       visibility: visible;
+    }
+  }
+  .xl\:top-\[10px\] {
+    @media (width >= 80rem) {
+      top: 10px;
     }
   }
   .xl\:top-\[20px\] {
