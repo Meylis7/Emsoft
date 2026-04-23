@@ -129,7 +129,7 @@
                     </p>
                 </div>
 
-                <form action="#"
+                <div
                     class="grid md:grid-cols-2 gap-10 md:gap-6 relative p-5 sm:p-10! xl:p-25 mt-10 border border-solid border-[#C6E2F4] rounded-[20px] bg-[linear-gradient(90.64deg,rgba(236,245,251,0.3)_0.35%,rgba(103,178,224,0.3)_109.61%)]">
 
                     <div class="block max-w-full md:max-w-110">
@@ -139,7 +139,7 @@
                                 Phone
                             </label>
 
-                            <input type="number" id="phone"
+                            <input type="number" id="phone" readonly
                                 class="block w-full border-solid border-0 border-b border-b-[#419FD9] pb-5 md:pb-10 pt-4 placeholder:text-[#061016] font-semibold text-[18px] md:text-2xl leading-tight"
                                 placeholder="+1 (952) 594-2575">
                         </div>
@@ -150,7 +150,7 @@
                                 E-mail
                             </label>
 
-                            <input type="email" id="mail"
+                            <input type="email" id="mail" readonly
                                 class="block w-full border-solid border-0 border-b border-b-[#419FD9] pb-5 md:pb-10 pt-4 placeholder:text-[#061016] font-semibold text-[18px] md:text-2xl leading-tight"
                                 placeholder="sales@emsoftmn.com">
                         </div>
@@ -161,13 +161,13 @@
                                 Mailing Address
                             </label>
 
-                            <textarea name="message" id="message"
+                            <textarea name="message" id="message" readonly
                                 class="block w-full border-solid border-0 border-b border-b-[#419FD9] pb-5 md:pb-10 pt-4 placeholder:text-[#061016] font-semibold text-[18px] md:text-2xl leading-tight text-wrap"
                                 placeholder="EMSoft LLC PO BOX 91 Savage, MN 55378-9901 USA"></textarea>
                         </div>
                     </div>
 
-                    <div class="flex items-center justify-center flex-col text-center">
+                    <div class="flex items-center justify-center flex-col text-center" data-contact-intro>
                         <h1 class="text-xl md:text-[30px] font-medium leading-tight">
                             Ready to discuss your project?
                         </h1>
@@ -175,16 +175,133 @@
                             Describe your goals — we will contact you within 1 business day and provide implementation
                             options
                         </p>
-                        <button type="submit"
+                        <button type="button"
+                            data-contact-open
                             class="text-16 md:text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] p-4 md:py-5! md:px-8! md:min-w-[320px] text-center rounded-lg gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
                             Send Us a Message
                         </button>
                     </div>
 
+                    <form action="#" class="hidden flex-col gap-4.5" data-contact-form>
+                        <div class="relative block w-full custom-dropdown" data-dropdown>
+                            <input type="hidden" name="lead_source" value="">
+
+                            <button type="button"
+                                class="flex w-full items-center justify-between border-solid border-1.5 border-[#419FD9] rounded-md p-4 md:p-5 text-left text-[12px] md:text-sm font-normal leading-tight text-[#5D5D5D] cursor-pointer transition-all duration-300 focus:outline-none focus:border-[#275F82]"
+                                data-dropdown-trigger aria-expanded="false">
+                                <span data-dropdown-label>How did you hear about us?</span>
+                                <span class="ml-4 shrink-0 text-[#419FD9] transition-transform duration-300"
+                                    data-dropdown-arrow>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="currentColor" stroke-width="1.8"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="pointer-events-none absolute left-0 right-0 top-[calc(100%+1px)] z-30 max-h-0 overflow-hidden rounded-md border border-[#C6E2F4] bg-white opacity-0 shadow-[0_12px_30px_rgba(6,16,22,0.12)] transition-all duration-300"
+                                data-dropdown-menu>
+                                <div class="p-2">
+                                    <div class="rounded-md px-4 py-3 text-[12px] md:text-sm text-[#5D5D5D] transition-all duration-200 hover:bg-[#ECF5FB] hover:text-[#061016] cursor-pointer"
+                                        data-dropdown-option data-value="google-search">Google Search</div>
+                                    <div class="rounded-md px-4 py-3 text-[12px] md:text-sm text-[#5D5D5D] transition-all duration-200 hover:bg-[#ECF5FB] hover:text-[#061016] cursor-pointer"
+                                        data-dropdown-option data-value="social-media">Social Media</div>
+                                    <div class="rounded-md px-4 py-3 text-[12px] md:text-sm text-[#5D5D5D] transition-all duration-200 hover:bg-[#ECF5FB] hover:text-[#061016] cursor-pointer"
+                                        data-dropdown-option data-value="referral">Referral</div>
+                                    <div class="rounded-md px-4 py-3 text-[12px] md:text-sm text-[#5D5D5D] transition-all duration-200 hover:bg-[#ECF5FB] hover:text-[#061016] cursor-pointer"
+                                        data-dropdown-option data-value="clutch-upwork">Clutch / Upwork</div>
+                                    <div class="rounded-md px-4 py-3 text-[12px] md:text-sm text-[#5D5D5D] transition-all duration-200 hover:bg-[#ECF5FB] hover:text-[#061016] cursor-pointer"
+                                        data-dropdown-option data-value="advertisement">Advertisement</div>
+                                    <div class="rounded-md px-4 py-3 text-[12px] md:text-sm text-[#5D5D5D] transition-all duration-200 hover:bg-[#ECF5FB] hover:text-[#061016] cursor-pointer"
+                                        data-dropdown-option data-value="other">Other</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block w-full">
+                            <input type="text" placeholder="Your Name"
+                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md p-4 md:p-5 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight">
+                        </div>
+
+                        <div class="block w-full">
+                            <input type="text" placeholder="Your Email"
+                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md p-4 md:p-5 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight">
+                        </div>
+
+                        <div class="block w-full relative">
+                            <div class="flex items-center gap-2.5 absolute top-1/2 -translate-y-1/2 left-5">
+                                <span class="bloack">
+                                    <svg width="18" height="13" viewBox="0 0 18 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_18_229)">
+                                            <path d="M0 0H18V13H0" fill="#BD3D44" />
+                                            <path
+                                                d="M0 1.49805H18H0ZM0 3.49409H18H0ZM0 5.49826H18H0ZM0 7.50242H18H0ZM0 9.50659H18H0ZM0 11.5108H18H0Z"
+                                                fill="black" />
+                                            <path
+                                                d="M0 0.99707V1.99915H18V0.99707H0ZM0 2.99311V3.9952H18V2.99311H0ZM0 4.99728V5.99936H18V4.99728H0ZM0 7.00145V8.00353H18V7.00145H0ZM0 9.00561V10.0077H18V9.00561H0ZM0 11.0098V12.0119H18V11.0098H0Z"
+                                                fill="white" />
+                                            <path d="M0 0H10.26V7.00104H0" fill="#192F5D" />
+                                            <path
+                                                d="M9.39394 5.9041L9.64707 6.63535L9.0002 6.17493H9.78769L9.14082 6.63535L9.39394 5.9041ZM7.70645 5.9041L7.95957 6.63535L7.3127 6.17493H8.10019L7.45332 6.63535L7.70645 5.9041ZM5.99082 5.9041L6.24395 6.63535L5.59707 6.17493H6.38457L5.7377 6.63535L5.99082 5.9041ZM4.2752 5.9041L4.52832 6.63535L3.88145 6.17493H4.66895L4.02207 6.63535L4.2752 5.9041ZM2.55957 5.9041L2.8127 6.63535L2.16582 6.17493H2.95332L2.30645 6.63535L2.55957 5.9041ZM0.843945 5.9041L1.09707 6.63535L0.450195 6.17493H1.2377L0.59082 6.63535L0.843945 5.9041ZM8.55019 5.19993L8.80332 5.93118L8.15645 5.47077H8.94394L8.29707 5.93118L8.55019 5.19993ZM6.83457 5.19993L7.0877 5.93118L6.44082 5.47077H7.22832L6.58145 5.93118L6.83457 5.19993ZM5.14707 5.19993L5.4002 5.93118L4.75332 5.47077H5.54082L4.89395 5.93118L5.14707 5.19993ZM3.43145 5.19993L3.68457 5.93118L3.0377 5.47077H3.8252L3.17832 5.93118L3.43145 5.19993ZM1.71582 5.19993L1.96895 5.93118L1.32207 5.47077H2.10957L1.4627 5.93118L1.71582 5.19993ZM9.39394 4.49577L9.64707 5.22702L9.0002 4.7666H9.78769L9.14082 5.22702L9.39394 4.49577ZM7.70645 4.49577L7.95957 5.22702L7.3127 4.7666H8.10019L7.45332 5.22702L7.70645 4.49577ZM5.99082 4.49577L6.24395 5.22702L5.59707 4.7666H6.38457L5.7377 5.22702L5.99082 4.49577ZM4.2752 4.49577L4.52832 5.22702L3.88145 4.7666H4.66895L4.02207 5.22702L4.2752 4.49577ZM2.55957 4.49577L2.8127 5.22702L2.16582 4.7666H2.95332L2.30645 5.22702L2.55957 4.49577ZM0.843945 4.49577L1.09707 5.22702L0.450195 4.7666H1.2377L0.59082 5.22702L0.843945 4.49577ZM8.55019 3.81868L8.80332 4.54993L8.15645 4.08952H8.94394L8.29707 4.54993L8.55019 3.81868ZM6.83457 3.81868L7.0877 4.54993L6.44082 4.08952H7.22832L6.58145 4.54993L6.83457 3.81868ZM5.14707 3.81868L5.4002 4.54993L4.75332 4.08952H5.54082L4.89395 4.54993L5.14707 3.81868ZM3.43145 3.81868L3.68457 4.54993L3.0377 4.08952H3.8252L3.17832 4.54993L3.43145 3.81868ZM1.71582 3.81868L1.96895 4.54993L1.32207 4.08952H2.10957L1.4627 4.54993L1.71582 3.81868ZM9.39394 3.11452L9.64707 3.84577L9.0002 3.38535H9.78769L9.14082 3.84577L9.39394 3.11452ZM7.70645 3.11452L7.95957 3.84577L7.3127 3.38535H8.10019L7.45332 3.84577L7.70645 3.11452ZM5.99082 3.11452L6.24395 3.84577L5.59707 3.38535H6.38457L5.7377 3.84577L5.99082 3.11452ZM4.2752 3.11452L4.52832 3.84577L3.88145 3.38535H4.66895L4.02207 3.84577L4.2752 3.11452ZM2.55957 3.11452L2.8127 3.84577L2.16582 3.38535H2.95332L2.30645 3.84577L2.55957 3.11452ZM0.843945 3.11452L1.09707 3.84577L0.450195 3.38535H1.2377L0.59082 3.84577L0.843945 3.11452ZM8.55019 2.41035L8.80332 3.1416L8.15645 2.68119H8.94394L8.29707 3.1416L8.55019 2.41035ZM6.83457 2.41035L7.0877 3.1416L6.44082 2.68119H7.22832L6.58145 3.1416L6.83457 2.41035ZM5.14707 2.41035L5.4002 3.1416L4.75332 2.68119H5.54082L4.89395 3.1416L5.14707 2.41035ZM3.43145 2.41035L3.68457 3.1416L3.0377 2.68119H3.8252L3.17832 3.1416L3.43145 2.41035ZM1.71582 2.41035L1.96895 3.1416L1.32207 2.68119H2.10957L1.4627 3.1416L1.71582 2.41035ZM9.39394 1.70618L9.64707 2.43743L9.0002 1.97702H9.78769L9.14082 2.43743L9.39394 1.70618ZM7.70645 1.70618L7.95957 2.43743L7.3127 1.97702H8.10019L7.45332 2.43743L7.70645 1.70618ZM5.99082 1.70618L6.24395 2.43743L5.59707 1.97702H6.38457L5.7377 2.43743L5.99082 1.70618ZM4.2752 1.70618L4.52832 2.43743L3.88145 1.97702H4.66895L4.02207 2.43743L4.2752 1.70618ZM2.55957 1.70618L2.8127 2.43743L2.16582 1.97702H2.95332L2.30645 2.43743L2.55957 1.70618ZM0.843945 1.70618L1.09707 2.43743L0.450195 1.97702H1.2377L0.59082 2.43743L0.843945 1.70618ZM8.55019 1.00202L8.80332 1.73327L8.15645 1.27285H8.94394L8.29707 1.73327L8.55019 1.00202ZM6.83457 1.00202L7.0877 1.73327L6.44082 1.27285H7.22832L6.58145 1.73327L6.83457 1.00202ZM5.14707 1.00202L5.4002 1.73327L4.75332 1.27285H5.54082L4.89395 1.73327L5.14707 1.00202ZM3.43145 1.00202L3.68457 1.73327L3.0377 1.27285H3.8252L3.17832 1.73327L3.43145 1.00202ZM1.71582 1.00202L1.96895 1.73327L1.32207 1.27285H2.10957L1.4627 1.73327L1.71582 1.00202ZM9.39394 0.297852L9.64707 1.0291L9.0002 0.568685H9.78769L9.14082 1.0291L9.39394 0.297852ZM7.70645 0.297852L7.95957 1.0291L7.3127 0.568685H8.10019L7.45332 1.0291L7.70645 0.297852ZM5.99082 0.297852L6.24395 1.0291L5.59707 0.568685H6.38457L5.7377 1.0291L5.99082 0.297852ZM4.2752 0.297852L4.52832 1.0291L3.88145 0.568685H4.66895L4.02207 1.0291L4.2752 0.297852ZM2.55957 0.297852L2.8127 1.0291L2.16582 0.568685H2.95332L2.30645 1.0291L2.55957 0.297852ZM0.843945 0.297852L1.09707 1.0291L0.450195 0.568685H1.2377L0.59082 1.0291L0.843945 0.297852Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_18_229">
+                                                <rect width="18" height="13" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                <p class="text-[#061016] font-normal text-[12px] md:text-sm leading-tight">
+                                    +1
+                                </p>
+                            </div>
+                            <input type="number" placeholder="(000) 00000"
+                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md p-4 md:p-5 pl-16! md:pl-17! placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight">
+                        </div>
+
+                        <div class="block w-full">
+                            <textarea name="message" id="message" placeholder="Your Message"
+                                class="w-full border-solid border-1.5 border-[#419FD9] rounded-md p-4 md:p-5 placeholder:text-[#5D5D5D]/80 text-[12px] md:text-sm font-normal leading-tight min-h-40 max-h-60"></textarea>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-3">
+                            <button type="button"
+                                data-contact-close
+                                class="text-[16px] md:text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-4! md:py-5! px-8! text-center rounded-lg flex items-center justify-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)] transition-all hover:opacity-90">
+                                Close Request
+
+                                <!-- <span class="block w-6">
+                                    <svg class="block w-ull object-contain" width="25" height="11" viewBox="0 0 25 11"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.495 5.64976C24.7683 5.37639 24.7683 4.93318 24.495 4.65981L20.0402 0.205038C19.7668 -0.0683293 19.3236 -0.0683293 19.0503 0.205038C18.7769 0.478405 18.7769 0.92162 19.0503 1.19499L23.01 5.15479L19.0503 9.11458C18.7769 9.38795 18.7769 9.83117 19.0503 10.1045C19.3236 10.3779 19.7668 10.3779 20.0402 10.1045L24.495 5.64976ZM0 5.15479V5.85479H24V5.15479V4.45479H0V5.15479Z"
+                                            fill="white" />
+                                    </svg>
+                                </span> -->
+                            </button>
+                            <button type="submit"
+                                class="text-[16px] md:text-[18px] font-semibold cursor-pointer text-white! bg-[#419FD9] py-4! md:py-5! px-8! text-center rounded-lg flex items-center justify-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)] transition-all hover:opacity-90">
+                                Submit Request
+
+                                <span class="block w-6">
+                                    <svg class="block w-ull object-contain" width="25" height="11" viewBox="0 0 25 11"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.495 5.64976C24.7683 5.37639 24.7683 4.93318 24.495 4.65981L20.0402 0.205038C19.7668 -0.0683293 19.3236 -0.0683293 19.0503 0.205038C18.7769 0.478405 18.7769 0.92162 19.0503 1.19499L23.01 5.15479L19.0503 9.11458C18.7769 9.38795 18.7769 9.83117 19.0503 10.1045C19.3236 10.3779 19.7668 10.3779 20.0402 10.1045L24.495 5.64976ZM0 5.15479V5.85479H24V5.15479V4.45479H0V5.15479Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+
                     <div class="block absolute -top-11.5 -right-12 opacity-40 z-0 pointer-events-none">
                         <img src="assets/images/contact-lamp.png" alt="lamp-icon">
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </section>

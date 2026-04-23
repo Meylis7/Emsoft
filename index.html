@@ -1886,7 +1886,7 @@
                             <input type="hidden" name="lead_source" value="">
 
                             <button type="button"
-                                class="flex w-full items-center justify-between border-solid border-1.5 border-[#419FD9] rounded-md p-4 md:p-5 text-left text-[12px] md:text-sm font-normal leading-tight text-[#5D5D5D] bg-white cursor-pointer transition-all duration-300 focus:outline-none focus:border-[#275F82]"
+                                class="flex w-full items-center justify-between border-solid border-1.5 border-[#419FD9] rounded-md p-4 md:p-5 text-left text-[12px] md:text-sm font-normal leading-tight text-[#5D5D5D] cursor-pointer transition-all duration-300 focus:outline-none focus:border-[#275F82]"
                                 data-dropdown-trigger aria-expanded="false">
                                 <span data-dropdown-label>How did you hear about us?</span>
                                 <span class="ml-4 shrink-0 text-[#419FD9] transition-transform duration-300" data-dropdown-arrow>
@@ -2235,68 +2235,7 @@
                 counterObserver.observe(counter);
             });
 
-            // Custom Dropdown
-            const dropdowns = document.querySelectorAll('[data-dropdown]');
-
-            function closeDropdown(dropdown) {
-                const trigger = dropdown.querySelector('[data-dropdown-trigger]');
-                const menu = dropdown.querySelector('[data-dropdown-menu]');
-                const arrow = dropdown.querySelector('[data-dropdown-arrow]');
-
-                trigger.setAttribute('aria-expanded', 'false');
-                menu.classList.add('max-h-0', 'opacity-0', 'pointer-events-none');
-                menu.classList.remove('max-h-80', 'opacity-100', 'pointer-events-auto');
-                arrow.classList.remove('rotate-180');
-            }
-
-            function openDropdown(dropdown) {
-                const trigger = dropdown.querySelector('[data-dropdown-trigger]');
-                const menu = dropdown.querySelector('[data-dropdown-menu]');
-                const arrow = dropdown.querySelector('[data-dropdown-arrow]');
-
-                dropdowns.forEach(item => {
-                    if (item !== dropdown) closeDropdown(item);
-                });
-
-                trigger.setAttribute('aria-expanded', 'true');
-                menu.classList.remove('max-h-0', 'opacity-0', 'pointer-events-none');
-                menu.classList.add('max-h-80', 'opacity-100', 'pointer-events-auto');
-                arrow.classList.add('rotate-180');
-            }
-
-            dropdowns.forEach(dropdown => {
-                const trigger = dropdown.querySelector('[data-dropdown-trigger]');
-                const label = dropdown.querySelector('[data-dropdown-label]');
-                const hiddenInput = dropdown.querySelector('input[type="hidden"]');
-                const options = dropdown.querySelectorAll('[data-dropdown-option]');
-
-                trigger.addEventListener('click', function () {
-                    const isOpen = trigger.getAttribute('aria-expanded') === 'true';
-                    if (isOpen) {
-                        closeDropdown(dropdown);
-                    } else {
-                        openDropdown(dropdown);
-                    }
-                });
-
-                options.forEach(option => {
-                    option.addEventListener('click', function () {
-                        label.textContent = option.textContent.trim();
-                        label.classList.add('text-[#061016]');
-                        hiddenInput.value = option.dataset.value || '';
-                        closeDropdown(dropdown);
-                    });
-                });
-            });
-
-            document.addEventListener('click', function (event) {
-                dropdowns.forEach(dropdown => {
-                    if (!dropdown.contains(event.target)) {
-                        closeDropdown(dropdown);
-                    }
-                });
-            });
-
+         
             // Floating Chat Logic
             const chatAlert = document.getElementById('chat-alert');
             const chatBtn = document.getElementById('chat-btn');

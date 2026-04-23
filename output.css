@@ -797,6 +797,9 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -1584,6 +1587,13 @@
       }
     }
   }
+  .hover\:opacity-90 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 90%;
+      }
+    }
+  }
   .hover\:shadow-\[0_10px_25px_rgba\(65\,159\,217\,0\.4\)\] {
     &:hover {
       @media (hover: hover) {
@@ -1712,24 +1722,9 @@
       margin-block: 65px;
     }
   }
-  .md\:-mt-5 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * -5);
-    }
-  }
-  .md\:-mt-20 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * -20);
-    }
-  }
   .md\:-mt-30 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * -30);
-    }
-  }
-  .md\:-mt-40 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * -40);
     }
   }
   .md\:mt-10 {
@@ -1925,6 +1920,11 @@
   .md\:min-w-\[320px\] {
     @media (width >= 48rem) {
       min-width: 320px;
+    }
+  }
+  .md\:grid-cols-1 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
   .md\:grid-cols-2 {
@@ -2412,6 +2412,11 @@
   .xl\:grid-cols-1 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .xl\:grid-cols-2 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .xl\:grid-cols-3 {
