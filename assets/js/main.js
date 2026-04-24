@@ -185,3 +185,33 @@ if (contactForm) {
     showContactIntro();
   });
 }
+
+// AI assistant panel toggle
+const aiAssistantGrid = document.querySelector("[data-ai-assistant-grid]");
+const aiAssistantPanel = document.querySelector("[data-ai-assistant-panel]");
+const aiAssistantTriggers = document.querySelectorAll("[data-ai-assistant-trigger]");
+const aiAssistantCloseButton = document.querySelector("[data-ai-assistant-close]");
+
+function closeAiAssistantPanel() {
+  if (!aiAssistantGrid || !aiAssistantPanel) return;
+
+  aiAssistantPanel.classList.add("hidden");
+  aiAssistantGrid.classList.remove("lg:grid-cols-2");
+  aiAssistantGrid.classList.add("grid-cols-1");
+}
+
+function openAiAssistantPanel() {
+  if (!aiAssistantGrid || !aiAssistantPanel) return;
+
+  aiAssistantPanel.classList.remove("hidden");
+  aiAssistantGrid.classList.remove("grid-cols-1");
+  aiAssistantGrid.classList.add("lg:grid-cols-2");
+}
+
+aiAssistantTriggers.forEach((trigger) => {
+  trigger.addEventListener("click", openAiAssistantPanel);
+});
+
+if (aiAssistantCloseButton) {
+  aiAssistantCloseButton.addEventListener("click", closeAiAssistantPanel);
+}

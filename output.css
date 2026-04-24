@@ -279,14 +279,8 @@
   .right-7 {
     right: calc(var(--spacing) * 7);
   }
-  .right-10 {
-    right: calc(var(--spacing) * 10);
-  }
   .-bottom-2 {
     bottom: calc(var(--spacing) * -2);
-  }
-  .bottom-10 {
-    bottom: calc(var(--spacing) * 10);
   }
   .bottom-25 {
     bottom: calc(var(--spacing) * 25);
@@ -832,6 +826,9 @@
   }
   .items-start {
     align-items: flex-start;
+  }
+  .justify-baseline {
+    justify-content: baseline;
   }
   .justify-between {
     justify-content: space-between;
@@ -1698,36 +1695,6 @@
       right: calc(var(--spacing) * 0);
     }
   }
-  .md\:right-7 {
-    @media (width >= 48rem) {
-      right: calc(var(--spacing) * 7);
-    }
-  }
-  .md\:right-12 {
-    @media (width >= 48rem) {
-      right: calc(var(--spacing) * 12);
-    }
-  }
-  .md\:right-\[28px\] {
-    @media (width >= 48rem) {
-      right: 28px;
-    }
-  }
-  .md\:bottom-15 {
-    @media (width >= 48rem) {
-      bottom: calc(var(--spacing) * 15);
-    }
-  }
-  .md\:bottom-25 {
-    @media (width >= 48rem) {
-      bottom: calc(var(--spacing) * 25);
-    }
-  }
-  .md\:bottom-\[100px\] {
-    @media (width >= 48rem) {
-      bottom: 100px;
-    }
-  }
   .md\:left-\[32px\] {
     @media (width >= 48rem) {
       left: 32px;
@@ -1946,11 +1913,6 @@
   .md\:min-w-\[320px\] {
     @media (width >= 48rem) {
       min-width: 320px;
-    }
-  }
-  .md\:grid-cols-1 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
   .md\:grid-cols-2 {
@@ -2438,11 +2400,6 @@
   .xl\:grid-cols-1 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
-  .xl\:grid-cols-2 {
-    @media (width >= 80rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .xl\:grid-cols-3 {
