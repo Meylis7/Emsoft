@@ -215,3 +215,60 @@ aiAssistantTriggers.forEach((trigger) => {
 if (aiAssistantCloseButton) {
   aiAssistantCloseButton.addEventListener("click", closeAiAssistantPanel);
 }
+
+// Portfolio load more
+const workGrid = document.querySelector("[data-work-grid]");
+const workLoadMoreButton = document.querySelector("[data-work-load-more]");
+const workLoader = document.querySelector("[data-work-loader]");
+const WORK_ITEMS_PER_PAGE = 6;
+let visibleWorkItems = WORK_ITEMS_PER_PAGE;
+
+function getWorkItems() {
+  if (!workGrid) return [];
+
+  return Array.from(workGrid.children).filter((item) => item instanceof HTMLElement);
+}
+
+function renderWorkItems() {
+  const workItems = getWorkItems();
+
+  workItems.forEach((item, index) => {
+    item.classList.toggle("hidden", index >= visibleWorkItems);
+  });
+
+  if (!workLoadMoreButton) return;
+
+  const hasMoreItems = visibleWorkItems < workItems.length;
+  workLoadMoreButton.classList.toggle("hidden", !hasMoreItems);
+}
+
+if (workGrid) {
+  renderWorkItems();
+}
+
+if (workLoadMoreButton) {
+  workLoadMoreButton.addEventListener("click", function () {
+    const workItems = getWorkItems();
+
+    if (visibleWorkItems >= workItems.length) {
+      renderWorkItems();
+      return;
+    }
+
+    if (workLoader) {
+      workLoader.classList.remove("hidden");
+    }
+
+    workLoadMoreButton.setAttribute("disabled", "true");
+
+    window.setTimeout(function () {
+      visibleWorkItems += WORK_ITEMS_PER_PAGE;
+      renderWorkItems();
+      workLoadMoreButton.removeAttribute("disabled");
+
+      if (workLoader) {
+        workLoader.classList.add("hidden");
+      }
+    }, 700);
+  });
+}

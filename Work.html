@@ -12,6 +12,65 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <title>Emsoft</title>
+
+    <style>
+        .loader {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            position: relative;
+            animation: rotate 1s linear infinite
+        }
+
+        .loader::before,
+        .loader::after {
+            content: "";
+            box-sizing: border-box;
+            position: absolute;
+            inset: 0px;
+            border-radius: 50%;
+            border: 3px solid #FFF;
+            animation: prixClipFix 2s linear infinite;
+        }
+
+        .loader::after {
+            border-color: #fff;
+            animation: prixClipFix 2s linear infinite, rotate 0.5s linear infinite reverse;
+            inset: 6px;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes prixClipFix {
+            0% {
+                clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+            }
+
+            25% {
+                clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+            }
+
+            50% {
+                clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+            }
+
+            75% {
+                clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%)
+            }
+
+            100% {
+                clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -146,7 +205,7 @@
                     </h2>
                 </div>
 
-                <div class="relative grid md:grid-cols-2 gap-9">
+                <div class="relative grid md:grid-cols-2 gap-9" data-work-grid>
                     <div class="block">
                         <div class="block bg-[#EEEEEE] rounded-lg overflow-hidden">
                             <img src="assets/images/work-project.png" alt="project-photo">
@@ -215,6 +274,141 @@
                         </div>
                     </div>
 
+                    <div class="block">
+                        <div class="block bg-[#EEEEEE] rounded-lg overflow-hidden">
+                            <img src="assets/images/work-project.png" alt="project-photo">
+                        </div>
+
+                        <h4 class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight">
+                            Inventory Web Application
+                        </h4>
+                        <p class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight">
+                            A warehouse and inventory management system for an auto service network. Enables
+                            real-time
+                            tracking of stock levels, orders, and product movement
+                        </p>
+
+                        <div class="flex items-center flex-wrap gap-2.5">
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                YII2
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                HTML / CSS
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                ANGULAR
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                JS
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="block bg-[#EEEEEE] rounded-lg overflow-hidden">
+                            <img src="assets/images/work-project-2.png" alt="project-photo">
+                        </div>
+
+                        <h4 class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight">
+                            Stargate Platform
+                        </h4>
+                        <p class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight">
+                            A platform for managing mobile applications and digital services. Provides
+                            centralized
+                            control over users and operational processes
+                        </p>
+
+                        <div class="flex items-center flex-wrap gap-2.5">
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                YII2
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                HTML / CSS
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                ANGULAR
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                JS
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="block bg-[#EEEEEE] rounded-lg overflow-hidden">
+                            <img src="assets/images/work-project.png" alt="project-photo">
+                        </div>
+
+                        <h4 class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight">
+                            Inventory Web Application
+                        </h4>
+                        <p class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight">
+                            A warehouse and inventory management system for an auto service network. Enables
+                            real-time
+                            tracking of stock levels, orders, and product movement
+                        </p>
+
+                        <div class="flex items-center flex-wrap gap-2.5">
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                YII2
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                HTML / CSS
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                ANGULAR
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                JS
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="block bg-[#EEEEEE] rounded-lg overflow-hidden">
+                            <img src="assets/images/work-project-2.png" alt="project-photo">
+                        </div>
+
+                        <h4 class="mt-5 mb-3 text-[#061016] text-xl md:text-3xl font-semibold leading-tight">
+                            Stargate Platform
+                        </h4>
+                        <p class="text-[#061016] text-[16px] md:text-lg mb-4 leading-tight">
+                            A platform for managing mobile applications and digital services. Provides
+                            centralized
+                            control over users and operational processes
+                        </p>
+
+                        <div class="flex items-center flex-wrap gap-2.5">
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                YII2
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                HTML / CSS
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                ANGULAR
+                            </h6>
+                            <h6
+                                class="text-sm md:text-[18px] font-semibold text-[#419FD9] py-2 md:py-3 px-2 md:px-4 border-solid border border-[#DFDFDF] rounded-[5px]">
+                                JS
+                            </h6>
+                        </div>
+                    </div>
                     <div class="block">
                         <div class="block bg-[#EEEEEE] rounded-lg overflow-hidden">
                             <img src="assets/images/work-project.png" alt="project-photo">
@@ -351,6 +545,15 @@
                         </div>
                     </div>
                 </div>
+
+                <button type="button" data-work-load-more
+                    class="mx-auto mt-10 cursor-pointer text-white! bg-[#419FD9] py-4! md:py-5! px-8! text-center rounded-lg flex items-center justify-center gap-2 leading-tight shadow-[0_0_10px_rgba(65,159,217,0.4)]">
+                    <p class="text-[16px] md:text-[18px] font-semibold">
+                        Load more
+                    </p>
+
+                    <span class="loader hidden" data-work-loader></span>
+                </button>
             </div>
         </div>
     </section>
