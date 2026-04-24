@@ -237,6 +237,9 @@
   .-top-11\.5 {
     top: calc(var(--spacing) * -11.5);
   }
+  .-top-\[7px\] {
+    top: calc(7px * -1);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -662,6 +665,15 @@
   }
   .w-\[70\%\] {
     width: 70%;
+  }
+  .w-\[635px\] {
+    width: 635px;
+  }
+  .w-\[735px\] {
+    width: 735px;
+  }
+  .w-\[835px\] {
+    width: 835px;
   }
   .w-fit {
     width: fit-content;
@@ -2434,6 +2446,41 @@
   .xl\:visible {
     @media (width >= 80rem) {
       visibility: visible;
+    }
+  }
+  .xl\:-top-\[5px\] {
+    @media (width >= 80rem) {
+      top: calc(5px * -1);
+    }
+  }
+  .xl\:-top-\[7px\] {
+    @media (width >= 80rem) {
+      top: calc(7px * -1);
+    }
+  }
+  .xl\:-top-\[10px\] {
+    @media (width >= 80rem) {
+      top: calc(10px * -1);
+    }
+  }
+  .xl\:top-\[0px\] {
+    @media (width >= 80rem) {
+      top: 0px;
+    }
+  }
+  .xl\:top-\[10px\] {
+    @media (width >= 80rem) {
+      top: 10px;
+    }
+  }
+  .xl\:top-\[15px\] {
+    @media (width >= 80rem) {
+      top: 15px;
+    }
+  }
+  .xl\:top-\[17px\] {
+    @media (width >= 80rem) {
+      top: 17px;
     }
   }
   .xl\:top-\[20px\] {
